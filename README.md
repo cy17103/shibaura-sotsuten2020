@@ -3,7 +3,7 @@
 ## Settings & Local Build
 ```
 git clone https://github.com/cy17103/test.git
-cd test
+cd test/shibatest
 npm install
 npm start
 ```
