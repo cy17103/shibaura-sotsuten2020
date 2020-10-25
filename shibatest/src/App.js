@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Btn from './components/Btn';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
         >
           変態ちんこさん
         </a>
+        <Btn />
       </header>
+      
     </div>
   );
 }
