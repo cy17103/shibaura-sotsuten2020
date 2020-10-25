@@ -7,7 +7,7 @@ npm install
 npm start
 ```
 
-##作業の始め方
+## 作業の始め方
 ```
 git checkout main
 git pull
