@@ -9,15 +9,16 @@
     font-family: "YuGothic","Yu Gothic"
 }
 
-.container{
+.btn-container{
     display: flex;
 }
 
 .ic-grid{
     height: 24px;
     width: 24px;
-    background-image: url('../img/grid.png');
+    background-image: url('../img/grid.svg');
     margin-right: 70px;
+    padding: 0;
 }
 
 p{
