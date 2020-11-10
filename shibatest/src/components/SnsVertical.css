@@ -1,0 +1,42 @@
+.sns-vertical{
+    position: fixed;
+    right: 100px;
+    top: 120px;
+}
+
+.sns-icons{
+    border:solid #212121 ;
+    border-width:1px 0;
+    margin-top: 16px;
+    padding: 12px 0;
+    width: 20px;
+}
+
+.vertical{
+    font-family: europa, sans-serif;
+    font-weight: 300;
+    font-style: normal;   
+    line-height: 20px;
+    font-size: 14px; 
+    letter-spacing: 1px;
+    writing-mode: vertical-rl;
+}
+
+.ic-twitter{
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/twitter.svg');
+    margin: 12px 0;
+}
+
+.ic-facebook{
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/facebook.svg');
+}
+
+.ic-instagram{
+    height: 20px;
+    width: 20px;
+    background-image: url('../img/instagram.svg');
+}
