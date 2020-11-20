@@ -1,14 +1,13 @@
 .btn-attention{
-    padding: 16px 20px;
     background-color: white;
     border: 1px solid #EF4949;
     text-align: center;
     border-radius: 4px;
-    color: #000;
     font-family: "YuGothic","Yu Gothic";
     width: 416px;
     box-sizing: border-box;
-}
+    display: inline;
+    transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);}
 
 .btn-attention-container{
     display: flex;
@@ -17,9 +16,16 @@
 .btn-attention p{
     font-size: 16px;
     font-weight: 700;
-    
-    line-height: 16px;
+    line-height: 48px;
     margin: 0;
     color: #EF4949;
     text-align: center;
+    width: 100%;
+}
+
+/*hover*/
+.btn-attention :hover{
+    
+    background-color: #EF4949;
+    color: white;
 }

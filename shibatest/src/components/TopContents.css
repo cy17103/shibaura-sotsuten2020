@@ -1,0 +1,70 @@
+.top-container{
+    text-align: center;
+    color: #212121;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+    margin-bottom: 92px;
+    margin-top: 60px;
+}
+
+.top-container h1{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.hakaru{
+    height: 160px;
+    width: 484px;
+    margin-bottom: 24px;
+}
+
+.exhibition-date{
+    font-style: normal; 
+    display: flex; 
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.date-border{
+    font-family: Europa-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 16px;
+}
+
+.exhibition-date p{
+    font-family: Europa-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height, or 120% */
+    
+    letter-spacing: 0.1em;
+}
+
+
+.date{
+    display: flex;
+    font-size: 40px;
+}
+
+.day{
+    font-family: Europa-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.exhibition-time{
+    font-family: YuGothic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    
+    letter-spacing: 0.14em;
+}

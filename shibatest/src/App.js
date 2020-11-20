@@ -5,6 +5,9 @@ import SnsVertical from './components/SnsVertical';
 import BtnAttention from './components/BtnAttention';
 
 import './App.css';
+import TopContents from './components/TopContents';
+
+import Scroll from '../src/img/scroll.svg';
 
 function App() {
   return (
@@ -12,6 +15,7 @@ function App() {
       <div className="top-container">
         <Header />
         <header className="App-header">
+          {/*
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -24,9 +28,18 @@ function App() {
           >
             Figmaでみる
           </a>  
+          */}
+          <TopContents />
+          <img src={Scroll} className="scroll"/>
           <BtnAttention />
           
         </header> 
+
+        <div className="works-list">
+          <div className="works-item">
+
+          </div>
+        </div>
 
 
         <SnsVertical />
