@@ -2,8 +2,7 @@
     text-align: center;
     color: #212121;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
-    margin-bottom: 92px;
-    margin-top: 60px;
+    margin-top: 120px;
 }
 
 .top-container h1{
@@ -67,4 +66,6 @@
     line-height: 16px;
     
     letter-spacing: 0.14em;
+
+    margin-bottom: 60px;
 }

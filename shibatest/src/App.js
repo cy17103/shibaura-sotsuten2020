@@ -3,6 +3,7 @@ import Btn from './components/Btn';
 import Header from './components/Header';
 import SnsVertical from './components/SnsVertical';
 import BtnAttention from './components/BtnAttention';
+import WorksItem from './components/WorksItem';
 
 import './App.css';
 import TopContents from './components/TopContents';
@@ -12,7 +13,7 @@ import Scroll from '../src/img/scroll.svg';
 function App() {
   return (
     <div className="App">
-      <div className="top-container">
+      <div className="top">
         <Header />
         <header className="App-header">
           {/*
@@ -35,19 +36,34 @@ function App() {
           
         </header> 
 
-        <div className="works-list">
-          <div className="works-item">
+        <SnsVertical />
+        
+      </div>
 
-          </div>
+      <div className="works-container">
+
+        <div className="works-list">
+            <WorksItem />
+            <WorksItem />
+            <WorksItem />
+            <WorksItem />
+            <WorksItem />
         </div>
 
-
-        <SnsVertical />
-        <Btn />
+        <div className="works-list">
+            <WorksItem />
+            <WorksItem />
+            <WorksItem />
+            <WorksItem />
+            <WorksItem />
+            <WorksItem />
+        </div>
         
-
-        <div className="blank"></div>
+        <Btn />
       </div>
+
+      <div className="blank"></div>
+
     </div>
   );
 }

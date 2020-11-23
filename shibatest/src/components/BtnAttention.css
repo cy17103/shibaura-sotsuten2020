@@ -6,8 +6,8 @@
     font-family: "YuGothic","Yu Gothic";
     width: 416px;
     box-sizing: border-box;
-    display: inline;
-    transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);}
+    transition: all 0.2s;
+}
 
 .btn-attention-container{
     display: flex;
@@ -21,11 +21,14 @@
     color: #EF4949;
     text-align: center;
     width: 100%;
+    transition: all 0.2s;
 }
 
 /*hover*/
-.btn-attention :hover{
-    
+.btn-attention:hover{ 
     background-color: #EF4949;
+}
+
+.btn-attention:hover p{
     color: white;
 }
