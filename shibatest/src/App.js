@@ -1,20 +1,24 @@
+import './App.css';
+
 import logo from './logo.svg';
 import Btn from './components/Btn';
 import Header from './components/Header';
 import SnsVertical from './components/SnsVertical';
 import BtnAttention from './components/BtnAttention';
 import WorksItem from './components/WorksItem';
-
-import './App.css';
+import TopSection from './components/TopSection';
+import NewsItem from './components/NewsItem';
 import TopContents from './components/TopContents';
-
 import Scroll from '../src/img/scroll.svg';
+import PortfolioItem from './components/PortfolioItem';
 
 function App() {
+
   return (
     <div className="App">
       <div className="top">
         <Header />
+        <SnsVertical />
         <header className="App-header">
           {/*
           <img src={logo} className="App-logo" alt="logo" />
@@ -36,7 +40,7 @@ function App() {
           
         </header> 
 
-        <SnsVertical />
+        
         
       </div>
 
@@ -47,22 +51,83 @@ function App() {
             <WorksItem />
             <WorksItem />
             <WorksItem />
-            <WorksItem />
+
         </div>
 
-        <div className="works-list">
+        <div className="works-list mg-40">
             <WorksItem />
             <WorksItem />
             <WorksItem />
             <WorksItem />
-            <WorksItem />
-            <WorksItem />
+
         </div>
         
         <Btn />
       </div>
 
-      <div className="blank"></div>
+
+      {/* news */}
+      <div className="container">
+          <TopSection 
+            sectionTitle='NEWS'
+          />
+          
+          <div className="news-list">
+            <NewsItem 
+              image='../img/news-default.png'
+              date='2020.10.30'
+              title='ニュースのタイトル'
+              text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
+            />
+
+            <NewsItem 
+              image='../img/news-default.png'
+              date='2020.10.30'
+              title='ニュースのタイトル'
+              text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
+            />
+
+            <NewsItem 
+              image='../img/news-default.png'
+              date='2020.10.30'
+              title='ニュースのタイトル'
+              text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
+            />            
+          </div>
+
+      </div>
+
+      {/* portfolio */}
+      <div className="container">
+        <TopSection 
+          sectionTitle='PORTFOLIO'
+        />
+        <p className="portfolio-text mg-40">デザイン工学部の学生にポートフォリオを公開していただきました〜〜〜ご覧ください。</p>
+
+        <div className="portfolio-list">
+          <PortfolioItem 
+            class='UI/UX'
+          />
+
+          <PortfolioItem 
+            class='プロダクト'
+          />
+
+          <PortfolioItem 
+            class='生産'
+          />
+
+          <PortfolioItem 
+            class='ロボティクス'
+          />
+        </div>
+
+      
+
+      </div>
+
+
+      <div className="blank240"></div>
 
     </div>
   );

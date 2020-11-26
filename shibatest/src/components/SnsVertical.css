@@ -8,6 +8,7 @@
 .sns-icons{
     border:solid #212121 ;
     border-width:1px 0;
+    margin: 0 auto;
     margin-top: 16px;
     padding: 12px 0;
     width: 20px;
@@ -21,6 +22,7 @@
     font-size: 14px; 
     letter-spacing: 1px;
     writing-mode: vertical-rl;
+    margin: 0;
 }
 
 .ic-twitter{

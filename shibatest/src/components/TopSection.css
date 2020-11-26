@@ -1,0 +1,22 @@
+.top-section{
+    /*display: flex;*/
+    color: #212121;
+}
+
+
+  
+  h2:before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    background: #000;
+  }
+  
+  h2 span {
+    position: relative;
+    padding: 0 1em;
+    background: #fff;
+  }

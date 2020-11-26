@@ -8,7 +8,7 @@ class WorksItem extends React.Component{
             <div className="works-item-container">
                 <img src={BG} className="works-item-bg" />
                 <div className="works-item-contents">
-                    <p className="works-item-title">研究タイトル</p>
+                    <h4 className="works-item-title white">研究タイトル</h4>
                     <div className="works-item-subtext">
                         <p>感性インタラクションデザイン研究室</p>
                         <p>芝浦 太郎</p>

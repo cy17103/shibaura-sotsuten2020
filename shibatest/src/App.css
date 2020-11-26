@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: #212121;
 }
 
 .App-logo {
@@ -51,8 +52,7 @@
 }
 
 .works-container{
-  margin-bottom: 40px;
-  background-color: whitesmoke;
+  margin-bottom: 120px;
 }
 
 /*中央揃えにできない*/
@@ -60,9 +60,87 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: unset;
+  width: 100%;
+  overflow: hidden;
 }
 
+
+.container{
+  max-width: 1120px;
+  padding: 0 100px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.news-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-text{
+  max-width:343px;
+  margin: 0 auto;
+}
+
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+/*ページ共通要素*/
+
+h2 {
+  position: relative;
+  padding: 0 65px;
+  text-align: center;
+  font-family: Europa-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 52px;
+}
+
+h4{
+  font-family: YuGothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  margin: 0 0;
+
+}
+
+p{
+  font-family: YuGothic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  letter-spacing: 0.05em;  
+}
+
+/* カラー */
+.white{
+  color: white;
+}
+
+
 /* 開発用 */
-.blank{ /*空白スペース*/
+.blank240{ /*空白スペース*/
   height: 240px;
+}
+
+.mg-120{
+  margin-bottom:120px;
+}
+
+.mg-40{
+  margin-bottom: 40px;
 }

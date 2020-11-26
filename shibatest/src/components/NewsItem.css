@@ -1,0 +1,39 @@
+.news-item{
+    width: 362px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+
+  .news-item-image{
+      width: 100%;
+      height: 232px;
+      margin-bottom: 16px;
+  }
+
+.news-item-date{
+    font-family: YuGothic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    letter-spacing: 0.05em;
+    color: #777;
+    margin:0 0 8px 0;
+}
+
+  .news-item-text{
+    font-family: YuGothic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    
+    letter-spacing: 0.05em;
+    color: #777;
+
+    margin:8px 0 0 0;
+    
+  }
