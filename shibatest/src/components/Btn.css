@@ -24,12 +24,22 @@
     margin: 0;  
 }
 
+.btn-text{
+    width: 100%;
+    text-align: center;
+}
+
 .ic-grid{
     height: 24px;
     width: 24px;
-    margin-right: 70px;
+    margin-right: 8px;
     padding: 0;
-    transition: all 0.2s;
+    transition: all 0.3s;
+}
+
+.ic-grid path{
+    fill:#212121;
+    transition: all 0.3s;
 }
 
 .btn:hover{
@@ -37,6 +47,6 @@
     color: white;
 }
 
-.btn:hover .ic-grid{
+.btn:hover .ic-grid path{
     fill: white;
 }

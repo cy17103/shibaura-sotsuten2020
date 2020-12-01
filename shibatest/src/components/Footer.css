@@ -1,0 +1,128 @@
+.footer{
+    background-color: #000;
+    width: 100%;
+}
+
+.footer-container{
+    padding: 40px 100px;
+    color: #fff;
+}
+
+.footer-text{
+    font-family: YuGothic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 114% */
+
+    letter-spacing: 0.05em;
+    display: flex;
+    margin: 0;
+
+}
+
+.sns{
+    display: flex;
+    margin: 0 auto;
+    width: 156px;
+    
+}
+
+.ankerlink{
+    display: flex;
+    font-family: Europa-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    letter-spacing: 0.05em;
+
+    margin-bottom: 28px;
+}
+
+.ankerlink-textlink{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.ankerlink-textlink:hover{
+    color: #EB548A;
+}
+
+.footer-upper{
+    display: flex;
+    justify-content: space-between;
+    min-width: 880px;
+    margin-bottom: 60px;
+}
+
+.footer-left{
+    height: 88px;
+    margin-right: 240px;
+}
+
+.footer-center{
+    height: 88px;
+    margin-right: 80px;
+}
+
+.footer-right{
+    height: 88px;
+    text-align: left;
+    border-left: 1px solid #fff;
+    padding-left: 8px;
+    min-width: 248px;
+}
+
+.ic-twitter-white{
+    height: 36px;
+    width: 36px;
+    background-image: url('../img/twitter-white.svg');
+    margin: 0 24px;
+  }
+  
+  .ic-facebook-white{
+    height: 36px;
+    width: 36px;
+    background-image: url('../img/facebook-white.svg');
+  }
+  
+  .ic-instagram-white{
+    height: 36px;
+    width: 36px;
+    background-image: url('../img/instagram-white.svg');
+  }
+
+  .slash{
+      margin: 0 24px;
+  }
+
+  .footer-contact-link{
+      color: #fff;
+      transition: all 0.3s;
+  }
+
+  .footer-link:hover{
+    color: #EB548A;
+}
+
+
+
+  .copyright{
+    font-family: Noto Sans CJK JP;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    /*line-height: 12px;*/
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.05em;
+  }
+
+
+
+
+

@@ -14,7 +14,7 @@ class NewsItem extends React.Component{
                 {/*imageに指定がなければデフォルト画像を表示するようにする */}
                 <img src={Image} alt="description of image" className="news-item-image" />
                 <p className="news-item-date">{this.props.date}</p>
-                <h4>{this.props.title}</h4>
+                <a href="#" className="textlink">{this.props.title}</a>
                 <p className="news-item-text">{this.props.text}</p>
             </div>
         );

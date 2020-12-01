@@ -8,7 +8,7 @@ class Btn extends React.Component{
         return(
             <div className="sns-vertical">
                 <p className="vertical">SHIBAURA SOTSUTEN 2021  SNS</p>
-                <div className="sns-icons">
+                <div className="sns-icons-vertical">
                     <div className="ic-facebook"></div>
                     <div className="ic-twitter"></div>
                     <div className="ic-instagram"></div>

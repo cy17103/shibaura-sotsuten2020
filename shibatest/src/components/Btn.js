@@ -5,10 +5,24 @@ import './Btn.css';
 class Btn extends React.Component{
 
     render(){
-        return(
-            <div className="btn">
+
+    {/* props
+        text   = ボタンの文言
+        ic     = アイコンの有無（デフォルト：なし、true:あり）
+    */}
+    
+        let btn =( 
                 <div className="btn-container">
-                    <svg className="ic-grid" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <p className="btn-text">{this.props.text}</p>
+                </div>
+                );
+        
+        let icon = this.props.ic;
+
+        if(icon){
+            btn=(
+                <div className="btn-container">
+                    <svg className="ic-grid" >
                         <path d="M4 4H8V8H4V4Z" fill="#212121"/>
                         <path d="M4 10H8V14H4V10Z" fill="#212121"/>
                         <path d="M8 16H4V20H8V16Z" fill="#212121"/>
@@ -19,9 +33,14 @@ class Btn extends React.Component{
                         <path d="M16 10H20V14H16V10Z" fill="#212121"/>
                         <path d="M20 16H16V20H20V16Z" fill="#212121"/>
                     </svg> 
-                    <p>展示作品一覧を見る</p>
+                    <p className="btn-text">{this.props.text}</p>
                 </div>
-                
+            );
+        }
+
+        return(
+            <div className="btn">
+                {btn}
             </div>
         );
     }
