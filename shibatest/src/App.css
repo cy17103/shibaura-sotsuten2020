@@ -288,6 +288,10 @@ p{
   height: 240px;
 }
 
+.mg-auto{
+  margin: 0 auto;
+}
+
 .mg-120{
   margin-bottom:120px;
 }

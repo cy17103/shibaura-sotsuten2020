@@ -9,18 +9,15 @@ import TopSection from './components/TopSection';
 import NewsItem from './components/NewsItem';
 import TopContents from './components/TopContents';
 import PortfolioItem from './components/PortfolioItem';
+import SlideMenu from './components/SlideMenu';
 import Footer from './components/Footer';
 import { TwitterTimelineEmbed } from "../node_modules/react-twitter-embed";
 import FbEmbedPost from '../src/FbEmbedPost';
 
-import IcTwitter from '../src/img/twitter-white.svg'
-import IcFacebook from '../src/img/facebook-white.svg'
+import IcTwitter from '../src/img/twitter-white.svg';
+import IcFacebook from '../src/img/facebook-white.svg';
 import Scroll from '../src/img/scroll.svg';
-import aboutImage from '../src/img/aboutImage.png'
-import imagePath1 from './img/Rectangle 56-1.png'
-import imagePath2 from './img/Rectangle 56-2.png'
-import imagePath3 from './img/Rectangle 56-3.png'
-import imagePath4 from './img/Rectangle 56-4.png'
+import aboutImage from '../src/img/aboutImage.png';
 
 
 
@@ -36,9 +33,8 @@ function App() {
           <img src={Scroll} className="scroll"/>
           <BtnAttention />
           
+          
         </header> 
-
-        
         
       </div>
       
@@ -88,7 +84,7 @@ function App() {
         />
       </div>
 
-
+      
        
       {/* news */}
       <div className="container">

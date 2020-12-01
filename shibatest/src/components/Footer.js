@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import Logo from '../img/logo-white.svg';
 import Icon from '@material-ui/core/Icon';
+import SnsShare from './SnsShare';
 
 
 
@@ -26,11 +27,8 @@ class Footer extends React.Component{
                                 <a href="#" className="ankerlink-textlink">CONTACT</a>
                             </div>
 
-                            <div className="sns">
-                                <div className="ic-facebook-white"></div>
-                                <div className="ic-twitter-white"></div>
-                                <div className="ic-instagram-white"></div>
-                            </div>
+                            <div className="mg-auto"><SnsShare color='#ffffff'/></div>
+                            
                         </div>
 
                         <div className="footer-right">

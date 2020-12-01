@@ -22,13 +22,6 @@
 
 }
 
-.sns{
-    display: flex;
-    margin: 0 auto;
-    width: 156px;
-    
-}
-
 .ankerlink{
     display: flex;
     font-family: Europa-Regular;
@@ -65,6 +58,9 @@
 }
 
 .footer-center{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     height: 88px;
     margin-right: 80px;
 }
@@ -77,24 +73,7 @@
     min-width: 248px;
 }
 
-.ic-twitter-white{
-    height: 36px;
-    width: 36px;
-    background-image: url('../img/twitter-white.svg');
-    margin: 0 24px;
-  }
-  
-  .ic-facebook-white{
-    height: 36px;
-    width: 36px;
-    background-image: url('../img/facebook-white.svg');
-  }
-  
-  .ic-instagram-white{
-    height: 36px;
-    width: 36px;
-    background-image: url('../img/instagram-white.svg');
-  }
+
 
   .slash{
       margin: 0 24px;
@@ -120,6 +99,10 @@
     /* identical to box height, or 100% */
 
     letter-spacing: 0.05em;
+  }
+
+  .mg-auto{
+    margin: 0 auto;
   }
 
 
