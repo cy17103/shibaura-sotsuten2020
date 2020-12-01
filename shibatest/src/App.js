@@ -6,13 +6,13 @@ import SnsVertical from './components/SnsVertical';
 import BtnAttention from './components/BtnAttention';
 import WorksItem from './components/WorksItem';
 import TopSection from './components/TopSection';
-import NewsItem from './components/NewsItem';
-import TopContents from './components/TopContents';
-import PortfolioItem from './components/PortfolioItem';
-import SlideMenu from './components/SlideMenu';
-import Footer from './components/Footer';
-import { TwitterTimelineEmbed } from "../node_modules/react-twitter-embed";
-import FbEmbedPost from '../src/FbEmbedPost';
+import NewsItem from './components/NewsItem'
+import TopContents from './components/TopContents'
+import PortfolioItem from './components/PortfolioItem'
+import Footer from './components/Footer'
+import { TwitterTimelineEmbed } from '../node_modules/react-twitter-embed'
+import Iframe from '../node_modules/react-iframe'
+
 
 import IcTwitter from '../src/img/twitter-white.svg';
 import IcFacebook from '../src/img/facebook-white.svg';
@@ -204,12 +204,12 @@ function App() {
 
         <div className="flex">
           <div className="sns-container">
-            <div className="label-twitter">
+            <a className="label-twitter" href="https://twitter.com/sit_designex" target="_blank" rel="noopener noreferrer">
               <img src={IcTwitter} className="sns-ic"/>
-            </div>
+            </a>
 
             <div className="twitter-embed">
-              <TwitterTimelineEmbed
+              <TwitterTimelineEmbed　//Cookie関連の吹き出しがでる
                 sourceType="profile"
                 screenName="sit_designex"
                 theme="light"
@@ -219,12 +219,18 @@ function App() {
           </div>
 
           <div className="sns-container">
-            <div className="label-facebook">
+            <a className="label-facebook" href="https://www.facebook.com/shibauradesign2020/" target="_blank" rel="noopener noreferrer">
               <img src={IcFacebook} className="sns-ic"/>
-            </div>
+            </a>
 
             <div className="twitter-embed">
-            <FbEmbedPost />
+              <Iframe url="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshibauradesign2020%2F&tabs=timeline&width=440&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+              width="440px"
+              height="300px"
+              id="myId"
+              className="myClassname"
+              display="initial"
+              position="relative"/>
             </div>
           </div>
         </div>
