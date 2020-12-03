@@ -1,6 +1,7 @@
 import './App.css';
 
 import Btn from './components/Btn';
+import Scroll from './components/Scroll';
 import Header from './components/Header';
 import SnsVertical from './components/SnsVertical';
 import BtnAttention from './components/BtnAttention';
@@ -16,7 +17,6 @@ import Iframe from '../node_modules/react-iframe'
 
 import IcTwitter from '../src/img/twitter-white.svg';
 import IcFacebook from '../src/img/facebook-white.svg';
-import Scroll from '../src/img/scroll.svg';
 import aboutImage from '../src/img/aboutImage.png';
 
 
@@ -30,10 +30,8 @@ function App() {
         <SnsVertical />
         <header className="App-header">
           <TopContents />
-          <img src={Scroll} className="scroll"/>
+          <Scroll />
           <BtnAttention />
-          
-          
         </header> 
         
       </div>
@@ -126,19 +124,22 @@ function App() {
 
         <div className="portfolio-list mg-40">
           <PortfolioItem 
-            class='UI/UX'
+            status='UI/UX'
+            className={"mgr-16"}
           />
 
           <PortfolioItem 
-            class='プロダクト'
+            status='プロダクト'
+            className={"mgr-16"}
           />
 
           <PortfolioItem 
-            class='生産'
+            status='生産'
+            className={"mgr-16"}
           />
 
           <PortfolioItem 
-            class='ロボティクス'
+            status='ロボティクス'
           />
         </div>
 
@@ -173,12 +174,18 @@ function App() {
 
             <div className="about-texts-row mg-16">
               <h4>会期</h4>
-              <p>2021.3.14(木) - 3.24(木)<br></br>10:00 ~ 18:00 (最終入場時間 17:30)</p>
+                <div >
+                  <p>2021.3.14(日) - 3.28(日)<br></br>10:00 ~ 18:00 (最終入場時間 17:30)</p>
+                  <p className="about-subtext">*日曜日は休校日のため、ご入場できません。<br></br>*最終開催日は17:00までの入場となります。</p>
+                </div>
             </div>
 
             <div className="about-texts-row mg-16">
               <h4>会場</h4>
-              <p>芝浦工業大学芝浦キャンパス<br></br>〒108-8548 東京都港区芝浦3-9-14</p>
+              <div>
+                <p>芝浦工業大学芝浦キャンパス<br></br>〒108-8548 東京都港区芝浦3-9-14</p>
+                <p className="about-subtext">*大学敷地内に駐車場・駐輪場はございません。</p>
+              </div>
             </div>
 
             <div className="about-texts-row">

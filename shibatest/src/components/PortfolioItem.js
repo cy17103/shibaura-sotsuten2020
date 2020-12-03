@@ -7,10 +7,14 @@ import './PortfolioItem.css';
 class PortfolioItem extends React.Component{
 
     render(){
+
+        let containerClass = `portfolio-item-container ${this.props.className}`;
+
         return( /* propsで渡された文字列を線で挟む */
-            <div className="portfolio-item-container">
+
+            <div className={containerClass}>
                 <ClassTag
-                    class={this.props.class}
+                    class={this.props.status}
                 />
 
                 <div className="portfolio-item-contents">

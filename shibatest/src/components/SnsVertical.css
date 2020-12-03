@@ -13,8 +13,9 @@
     border-width:1px 0;
     margin: 0 auto;
     margin-top: 16px;
-    padding: 12px 0;
+    padding: 12px 0 8px 0;
     width: 20px;
+    height:80px ;
 }
 
 .vertical{
@@ -26,23 +27,4 @@
     letter-spacing: 1px;
     writing-mode: vertical-rl;
     margin: 0;
-}
-
-.ic-twitter{
-    height: 20px;
-    width: 20px;
-    background-image: url('../img/twitter.svg');
-    margin: 12px 0;
-}
-
-.ic-facebook{
-    height: 20px;
-    width: 20px;
-    background-image: url('../img/facebook.svg');
-}
-
-.ic-instagram{
-    height: 20px;
-    width: 20px;
-    background-image: url('../img/instagram.svg');
 }
