@@ -3,9 +3,7 @@
     color: #212121;
 }
 
-
-  
-  h2:before {
+  h1:before {
     position: absolute;
     top: calc(50% - 1px);
     left: 0;
@@ -15,8 +13,15 @@
     background: #000;
   }
   
-  h2 span {
+  h1 span {
     position: relative;
     padding: 0 1em;
     background: #fff;
+  }
+
+  @media (max-width: 599px){
+    h1 span {
+      padding: 0 0.2em;
+      
+    }
   }

@@ -2,12 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 
 import CloseIcon from '../img/close.svg';
 import MenuIcon from '../img/menu.svg';
@@ -54,7 +50,7 @@ export default function TemporaryDrawer() {
 
       <div className="slide-menu-header" >
         <div className="slide-menu-close" onClick={toggleDrawer('right',false)}>
-            <img src={CloseIcon} />
+            <img src={CloseIcon} alt="CloseIcon" />
         </div>
       </div>
       
@@ -83,7 +79,7 @@ export default function TemporaryDrawer() {
     <div className="slide-menu">
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
-            <img src={MenuIcon} onClick={toggleDrawer(anchor, true)} />
+            <img src={MenuIcon} onClick={toggleDrawer(anchor, true)} alt="MenuIcon" />
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>

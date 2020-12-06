@@ -1,17 +1,22 @@
 import React from 'react';
 import './WorksItem.css';
-import BG from '../img/WorksItemBG01.png';
+
 class WorksItem extends React.Component{
 
     render(){
+
+        const image = this.props.image;
+        let src = `${process.env.PUBLIC_URL}/assets/${image}`;
+
+
         return(
             <div className="works-item-container">
-                <img src={BG} className="works-item-bg" />
+                <img src={src} className="works-item-bg" alt="workThumbnail" />
                 <div className="works-item-contents">
-                    <h4 className="works-item-title white">研究タイトル</h4>
+                    <h4 className="works-item-title white">{this.props.title}</h4>
                     <div className="works-item-subtext">
-                        <p>感性インタラクションデザイン研究室</p>
-                        <p>芝浦 太郎</p>
+                        <p>{this.props.lab}</p>
+                        <p>{this.props.name}</p>
                     </div>
                 </div>
             </div>

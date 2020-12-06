@@ -32,3 +32,20 @@
 .btn-attention:hover p{
     color: white;
 }
+
+@media (max-width: 599px) {
+
+    .btn-attention{
+        width: 343px;
+        margin: 0 auto;
+    }
+
+    .btn-attention-container{
+        display: inline-block;
+    }
+
+    .btn-attention p{
+        font-size: 14px;
+        line-height: 44px;
+    }
+}

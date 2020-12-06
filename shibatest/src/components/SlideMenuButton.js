@@ -6,10 +6,6 @@ class SlideMenuButton extends React.Component{
 
     render(){
         
-        const subtext ={
-
-        }
-
         return( 
             <div className="SlideMenuButton">
                 <div className="Button-text">{this.props.value}</div>

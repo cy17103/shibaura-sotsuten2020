@@ -15,12 +15,14 @@
     height: 160px;
     width: 484px;
     margin-bottom: 24px;
+    margin: 0 auto;
+    display: block;
 }
 
 .exhibition-date{
     font-style: normal; 
-    display: flex; 
-    width: 300px;
+    display: inline-flex; 
+    
     margin: 0 auto;
     margin-bottom: 16px;
 }
@@ -30,7 +32,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 48px;
     margin: 0 16px;
 }
 
@@ -70,3 +72,15 @@
 
     margin-bottom: 60px;
 }
+
+@media (max-width: 599px) {
+    
+    .top-container{
+ 
+    }
+
+    .hakaru{
+        height: 84px;
+        width: 280px;
+    }
+  }

@@ -58,3 +58,11 @@
 .scroll:hover .circle{
     transform: translateY(20px);
 }
+
+
+
+@media (max-width: 599px) {
+    .scroll{
+        margin-bottom: 60px;
+    }
+}

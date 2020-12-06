@@ -8,7 +8,6 @@ import BtnAttention from './components/BtnAttention';
 import WorksItem from './components/WorksItem';
 import TopSection from './components/TopSection';
 import NewsItem from './components/NewsItem'
-import TopContents from './components/TopContents'
 import PortfolioItem from './components/PortfolioItem'
 import Footer from './components/Footer'
 import { TwitterTimelineEmbed } from '../node_modules/react-twitter-embed'
@@ -18,60 +17,207 @@ import Iframe from '../node_modules/react-iframe'
 import IcTwitter from '../src/img/twitter-white.svg';
 import IcFacebook from '../src/img/facebook-white.svg';
 import aboutImage from '../src/img/aboutImage.png';
+import Hakaru from '../src/img/hakaru.png';
 
 
 
 function App() {
 
   return (
-    <div className="App">
-      <div className="top">
-        <Header />
-        <SnsVertical />
-        <header className="App-header">
-          <TopContents />
-          <Scroll />
-          <BtnAttention />
-        </header> 
-        
+    <div className="Top">
+      <Header />
+      <div className="mobile-hidden"><SnsVertical /></div>
+      <div className="top-container">
+
+        <p>芝浦工業大学デザイン工学部卒業・修了研究展2021</p>     
+        <img src={Hakaru}  className="hakaru" alt="Hakaru"/>
+        <div className="exhibition-date">
+            <div className="date">
+                <p>3.14</p>
+                <span className="day">SUN</span>
+            </div>
+            <div className="date-border">-</div>
+            <div className="date">
+                <p>3.28</p>
+                <span className="day">SUN</span>
+            </div> 
+        </div>
+        <div className="exhibition-time">
+            10:00-18:00 [入場無料]
+        </div>       
+        <Scroll />
+        <BtnAttention/>
       </div>
       
       
-      <div className="works-container">
+      <div className="mg-120" id="works">
         <div className="works-list">
-          <div class="loop-wrap ">
+          <div class="upper-loop-wrap">
             <ul>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG01.png"
+                />
+              </li>
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG02.png"
+                />
+              </li>              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG03.png"
+                />
+              </li>              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG04.png"
+                />
+              </li>              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG05.png"
+                />
+              </li>
             </ul>
 
             <ul>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
+            <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG01.png"
+                />
+              </li>              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG02.png"
+                />
+              </li>              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG03.png"
+                />
+              </li>              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG04.png"
+                />
+              </li>              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG05.png"
+                />
+              </li>
             </ul>
           </div>
           
           <div class="loop-wrap mg-40">
-            <ul>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
+          <ul>
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG06.png"
+                />
+              </li>
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG07.png"
+                />
+              </li>             
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG08.png"
+                />
+              </li>          
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG09.png"
+                />
+              </li>              
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG10.png"
+                />
+              </li>
             </ul>
 
             <ul>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
-              <li><WorksItem className="works-item"/></li>
+            <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG06.png"
+                />
+              </li>              
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG07.png"
+                />
+              </li>              
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG08.png"
+                />
+              </li>              
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG09.png"
+                />
+              </li>              
+              <li><WorksItem 
+                  className="works-item"
+                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
+                  lab="研究室名"
+                  name="芝浦太郎"
+                  image="WorksItemBG10.png"
+                />
+              </li>
             </ul>
           </div>
         </div>
@@ -82,8 +228,9 @@ function App() {
         />
       </div>
 
-      
-       
+
+
+
       {/* news */}
       <div className="container">
           <TopSection 
@@ -94,8 +241,8 @@ function App() {
             <NewsItem 
               image='../img/news-default.png'
               date='2020.10.30'
-              title='ニュースのタイトル'
-              text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
+              title='ニュースのタイトルニュースのタイトルニュースのタイトル'
+              text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
             />
 
             <NewsItem 
@@ -159,7 +306,7 @@ function App() {
         />
 
         <div className="about-contents">
-          <img src={aboutImage} className="about-image" />
+          <img src={aboutImage} className="about-image" alt="exhibitionPoster"/>
 
           <div className="about-texts">
             <div className="about-texts-row mg-16">
@@ -212,7 +359,7 @@ function App() {
         <div className="flex">
           <div className="sns-container">
             <a className="label-twitter" href="https://twitter.com/sit_designex" target="_blank" rel="noopener noreferrer">
-              <img src={IcTwitter} className="sns-ic"/>
+              <img src={IcTwitter} className="sns-ic" alt="Twitter"/>
             </a>
 
             <div className="twitter-embed">
@@ -227,7 +374,7 @@ function App() {
 
           <div className="sns-container">
             <a className="label-facebook" href="https://www.facebook.com/shibauradesign2020/" target="_blank" rel="noopener noreferrer">
-              <img src={IcFacebook} className="sns-ic"/>
+              <img src={IcFacebook} className="sns-ic" alt="Facebook"/>
             </a>
 
             <div className="twitter-embed">

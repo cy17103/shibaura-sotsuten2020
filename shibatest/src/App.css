@@ -1,11 +1,10 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
   color: #212121;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .top{
@@ -13,16 +12,100 @@
   margin: 0 100px;
 }
 
+.top-container{
+  text-align: center;
+  color: #212121;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+
+  height: 100vh;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  margin: 0 auto;
+  
+}
 .App-header {
   background-color: #fff;
-  min-height: 100vh;
-  max-width: 1240px;
+
+  
   display: flex;
   flex-direction: column;
   
   justify-content: center;
 
 }
+
+.top-container h1{
+  font-family: YuGothic;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.hakaru{
+  height: 160px;
+  width: 484px;
+  margin-bottom: 24px;
+  margin: 0 auto;
+  display: block;
+}
+
+.exhibition-date{
+  font-style: normal; 
+  display: inline-flex; 
+  
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.date-border{
+  font-family: Europa-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 48px;
+  margin: 0 16px;
+}
+
+.exhibition-date p{
+  font-family: Europa-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
+  
+  letter-spacing: 0.1em;
+}
+
+
+.date{
+  display: flex;
+  font-size: 40px;
+}
+
+.day{
+  font-family: Europa-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.exhibition-time{
+  font-family: YuGothic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  
+  letter-spacing: 0.14em;
+
+  margin-bottom: 60px;
+}
+
+
 
 .App-link {
   color: #61dafb;
@@ -35,6 +118,7 @@
   padding: 0 100px;
   margin: 0 auto;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 
 .flex{
@@ -45,15 +129,70 @@
 
 
 /* works ----------------------*/
-.works-container{
-  margin-bottom: 120px;
-}
 
-.works-list{
 
-}
 
 /*loop------------*/
+
+.upper-loop-wrap {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.upper-loop-wrap ul{
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.upper-loop-wrap li{
+  list-style-type: none;
+}
+
+.upper-loop-wrap .works-item {
+  width: auto;
+  height: 100%;
+}
+
+@keyframes upper-loop {
+  0% {
+    transform: translateX(calc(100% - 10%));
+  }
+  to {
+    transform: translateX(calc(-100% - 10%));
+  }
+}
+
+@keyframes upper-loop2 {
+  0% {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(-210%);
+  }
+}
+
+.upper-loop-wrap ul:first-child {
+  animation: upper-loop 60s -30s linear infinite;
+  
+}
+
+.upper-loop-wrap ul:last-child {
+  animation: upper-loop2 60s linear infinite;
+  
+}
+
+.upper-loop-wrap:hover ul {
+  animation-play-state: paused;
+}
+
+
+/*---------------------------------------*/
+
 
 .loop-wrap {
   position: relative;
@@ -61,6 +200,7 @@
   width: 100vw;
   overflow: hidden;
 }
+
 
 .loop-wrap ul{
   display: flex;
@@ -97,11 +237,11 @@
 }
 
 .loop-wrap ul:first-child {
-  animation: loop 50s -25s linear infinite;
+  animation: loop 60s -30s linear infinite;
 }
 
 .loop-wrap ul:last-child {
-  animation: loop2 50s linear infinite;
+  animation: loop2 60s linear infinite;
 }
 
 .loop-wrap:hover ul {
@@ -165,7 +305,7 @@
 }
 
 .about-texts-row h4{
-  width: 68px;
+  min-width: 68px;
   margin-right: 32px;
 }
 
@@ -245,7 +385,7 @@ iframe{
 
 /*ページ共通要素*/
 
-h2 {
+h1 {
   position: relative;
   padding: 0 65px;
   text-align: center;
@@ -325,4 +465,55 @@ p{
 
 .mgr-4{
   margin-right: 4px;
+}
+
+
+@media (max-width: 599px) {
+  .top{
+    max-width: 343px;
+    margin: 0 auto;
+  }
+
+  .mobile-hidden{
+    display: none;
+  }
+
+  .container{
+    max-width: 343px;
+    margin: 0 16px;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+
+  /*TOP*/
+  .hakaru{
+      height: 84px;
+      width: 280px;
+      margin-bottom: 60px;
+  }
+
+
+
+  /*ABOUT*/
+
+
+
+
+  /*共通要素*/
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.05em;
+    padding: 0;
+  }
+
+  p{
+    line-height: 22px;
+    margin: 0;
+    /* or 150% */
+    letter-spacing: 0.03em; 
+  }
+  
 }
