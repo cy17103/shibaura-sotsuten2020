@@ -1,5 +1,7 @@
 import React from 'react';
 import './SlideMenuButton.css';
+import {Link} from '../../node_modules/react-router-dom';
+
 
 
 class SlideMenuButton extends React.Component{
@@ -8,8 +10,12 @@ class SlideMenuButton extends React.Component{
         
         return( 
             <div className="SlideMenuButton">
-                <div className="Button-text">{this.props.value}</div>
-                <p className="Button-subtext">{this.props.sub}</p>
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                    <div>
+                        <div className="Button-text">{this.props.value}</div>
+                        <p className="Button-subtext">{this.props.sub}</p>
+                    </div>
+                </Link>
             </div>
         );
     }
