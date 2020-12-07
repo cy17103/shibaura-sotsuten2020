@@ -3,7 +3,7 @@
     color: #212121;
 }
 
-  h1:before {
+.TopSection:before {
     position: absolute;
     top: calc(50% - 1px);
     left: 0;

@@ -1,4 +1,5 @@
 import './App.css';
+import './Style.css';
 import { BrowserRouter as Router, Route ,Link} from '../node_modules/react-router-dom';
 import About from './About';
 

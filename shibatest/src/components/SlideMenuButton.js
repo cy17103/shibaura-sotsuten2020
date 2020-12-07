@@ -10,7 +10,7 @@ class SlideMenuButton extends React.Component{
         
         return( 
             <div className="SlideMenuButton">
-                <Link to="/" style={{ textDecoration: 'none' }}>
+                <Link to={this.props.link} style={{ textDecoration: 'none' }}>
                     <div>
                         <div className="Button-text">{this.props.value}</div>
                         <p className="Button-subtext">{this.props.sub}</p>

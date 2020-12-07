@@ -1,5 +1,8 @@
 import './About.css';
+import './Style.css';
 import {Link} from '../node_modules/react-router-dom';
+
+import PageTop from './components/PageTop';
 
 import aboutImage from '../src/img/aboutImage.png';
 
@@ -10,6 +13,10 @@ function About() {
 
   return (
     <div className="About">
+        <PageTop 
+            title="ABOUT"
+            text="展覧会について"
+        />
         <div className="container">
             
             <div className="greeting" id="greeting">
