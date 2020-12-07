@@ -1,0 +1,31 @@
+.portfolio-item-container{
+    width: 268px;
+    height: 268px;
+    border-radius: 4px;
+
+    text-align: left;
+
+    background-image: url(../img/portfolio-default.png);
+    background-size: cover;
+
+    position: relative;
+    overflow: hidden;
+
+    margin-bottom: 16px;
+}
+
+.portfolio-item-contents{
+    height: 56px;
+    z-index: 2;
+    background-color: rgba(33,33,33,0.6);
+    padding: 16px;
+    width: 100%;
+    box-sizing:border-box;
+    position: absolute;
+    top: 268px;
+    transition: all 0.3s;
+}
+
+.portfolio-item-container:hover .portfolio-item-contents{
+    transform: translateY(-56px);
+}

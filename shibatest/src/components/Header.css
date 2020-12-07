@@ -4,6 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 .header-container{
@@ -23,4 +24,17 @@
     height: 40px;
     width: 40px;
     margin-top: 10px;
+}
+
+
+@media (max-width: 599px) {
+    .header{
+        max-width: 600px;
+    }
+
+    .header-container{
+        padding: 12px 16px;
+        display: flex;
+        justify-content: space-between;
+    }
 }

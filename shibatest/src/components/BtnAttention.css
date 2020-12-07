@@ -1,0 +1,51 @@
+.btn-attention{
+    background-color: white;
+    border: 1px solid #EF4949;
+    text-align: center;
+    border-radius: 4px;
+    font-family: "YuGothic","Yu Gothic";
+    width: 416px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+.btn-attention-container{
+    display: flex;
+}
+
+.btn-attention p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0;
+    color: #EF4949;
+    text-align: center;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+/*hover*/
+.btn-attention:hover{ 
+    background-color: #EF4949;
+}
+
+.btn-attention:hover p{
+    color: white;
+}
+
+@media (max-width: 599px) {
+
+    .btn-attention{
+        width: 343px;
+        margin: 0 auto;
+    }
+
+    .btn-attention-container{
+        display: inline-block;
+    }
+
+    .btn-attention p{
+        font-size: 14px;
+        line-height: 44px;
+    }
+}

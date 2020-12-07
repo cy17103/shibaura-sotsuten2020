@@ -1,0 +1,106 @@
+.news-item{
+    width: 362px;
+    text-align: left;
+    margin-bottom: 16px;
+    transition: all 0.3s;
+  }
+
+  .news-item a{
+    text-decoration: none;
+  }
+
+
+  .news-item-image{
+      width: 100%;
+      height: 232px;
+      margin-bottom: 16px;
+      transition: all 0.3s;
+  }
+
+.news-item-date{
+    font-family: YuGothic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    letter-spacing: 0.05em;
+    color: #777;
+    margin:0 0 8px 0;
+}
+
+  .news-item-text{
+    position: relative;
+    font-family: YuGothic;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    
+    letter-spacing: 0.05em;
+    color: #777;
+
+    margin:8px 0 0 0; 
+
+    max-width: 362px;
+    height: 40px;
+     
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+    -o-text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    
+  }
+  
+
+  .news-item-title{
+    font-family: YuGothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    margin: 0 0;
+    position: relative;
+    text-decoration: none;
+    color: #212121;
+    transition: all 0.3s;
+
+    width: 362px;
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    -webkit-text-overflow: ellipsis;  
+    -o-text-overflow: ellipsis;  
+
+  }
+
+  .news-item:hover .news-item-title{
+    color: #EB548A;
+  }
+
+
+  /*ホバーで下線が左から出現するエフェクト
+
+  .textlink:after{
+    height: 1px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: #EB548A;
+    content: '';
+    display: block;
+    transition: .3s all;
+  }
+
+  .news-item:hover .textlink::after{
+    width: 100%;
+  }
+
+  */

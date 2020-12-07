@@ -1,0 +1,33 @@
+.SlideMenuButton{
+    border-left: 1px solid #fff;
+    text-align: left;
+    margin-bottom: 32px;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.Button-text{
+    font-family: Europa-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    color: #212121;
+    transition: all 0.1s;
+}
+
+.Button-subtext{
+    color: #777;
+    transition: all 0.1s;
+}
+
+.SlideMenuButton:hover .Button-text{
+    color: #EB548A;
+}
+
+.SlideMenuButton:hover .Button-subtext{
+    color: #EB548A;
+}

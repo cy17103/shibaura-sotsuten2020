@@ -1,43 +1,519 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
+  color: #212121;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top{
+  max-width: 1240px;
+  margin: 0 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.top-container{
+  text-align: center;
+  color: #212121;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
 
-.App-header {
-  background-color: #fff;
-  min-height: 100vh;
+  height: 100vh;
+  max-width: 1240px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+  padding-top: 80px;
+  margin: 0 auto;
+  
 }
+.App-header {
+  background-color: #fff;
+
+  
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+
+}
+
+.top-container h1{
+  font-family: YuGothic;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.hakaru{
+  height: 160px;
+  width: 484px;
+  margin-bottom: 24px;
+  margin: 0 auto;
+  display: block;
+}
+
+.exhibition-date{
+  font-style: normal; 
+  display: inline-flex; 
+  
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.date-border{
+  font-family: Europa-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 48px;
+  margin: 0 16px;
+}
+
+.exhibition-date p{
+  font-family: Europa-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
+  
+  letter-spacing: 0.1em;
+}
+
+
+.date{
+  display: flex;
+  font-size: 40px;
+}
+
+.day{
+  font-family: Europa-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.exhibition-time{
+  font-family: YuGothic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  
+  letter-spacing: 0.14em;
+
+  margin-bottom: 60px;
+}
+
+
 
 .App-link {
   color: #61dafb;
   margin-bottom: 60px;
 }
 
-.blank{
-  height: 100vh;
+
+.container{
+  max-width: 1120px;
+  padding: 0 100px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+/* works ----------------------*/
+
+
+
+/*loop------------*/
+
+.upper-loop-wrap {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.upper-loop-wrap ul{
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.upper-loop-wrap li{
+  list-style-type: none;
+}
+
+.upper-loop-wrap .works-item {
+  width: auto;
+  height: 100%;
+}
+
+@keyframes upper-loop {
+  0% {
+    transform: translateX(calc(100% - 10%));
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(calc(-100% - 10%));
   }
+}
+
+@keyframes upper-loop2 {
+  0% {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(-210%);
+  }
+}
+
+.upper-loop-wrap ul:first-child {
+  animation: upper-loop 60s -30s linear infinite;
+  
+}
+
+.upper-loop-wrap ul:last-child {
+  animation: upper-loop2 60s linear infinite;
+  
+}
+
+.upper-loop-wrap:hover ul {
+  animation-play-state: paused;
+}
+
+
+/*---------------------------------------*/
+
+
+.loop-wrap {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.loop-wrap ul{
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.loop-wrap li{
+  list-style-type: none;
+}
+
+.loop-wrap .works-item {
+  width: auto;
+  height: 100%;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.loop-wrap ul:first-child {
+  animation: loop 60s -30s linear infinite;
+}
+
+.loop-wrap ul:last-child {
+  animation: loop2 60s linear infinite;
+}
+
+.loop-wrap:hover ul {
+  animation-play-state: paused;
+}
+
+/*loop------------*/
+
+
+
+
+
+.news-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+
+/*portfolio*/
+.portfolio-text{
+  max-width:343px;
+  margin: 0 auto;
+}
+
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+
+
+
+/* about ------------------------------------*/
+
+.about-contents{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-texts{
+ text-align: left;
+ margin: 0 auto;
+ margin-bottom: 40px;
+}
+
+.about-subtext{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #777777;
+}
+
+.about-texts-row{
+  display: flex;
+}
+
+.about-texts-row h4{
+  min-width: 68px;
+  margin-right: 32px;
+}
+
+.about-image{
+  width: 100%;
+  max-width: 506px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+
+/* SNS -------------------------------------*/
+.sns-container{
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 540px;
+  border: #EBEDF0 1px solid;
+  box-sizing: border-box;
+  margin:0 auto;
+  margin-bottom: 32px;
+}
+
+.label-twitter{
+  position: relative;
+  width: 100px;
+  height: 300px;
+  background-color:#00ACED ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+
+}
+
+.label-twitter:hover{
+  background-color:#039ED9 ;
+}
+
+.label-facebook{
+  position: relative;
+  width: 100px;
+  height: 300px;
+  background-color:#305097 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.label-facebook:hover{
+  background-color:#2D477F ;
+}
+
+.sns-ic{
+  width: 40px;
+  height: 40px;
+}
+
+.twitter-embed{
+  display: flex;
+  text-align: left;
+  width: 440px;
+  height: 300px;
+  background-color: #fff;
+}
+
+iframe{
+  border-width: 0;
+}
+
+/* アイコン関連　*/
+
+
+
+
+
+/*ページ共通要素*/
+
+h1 {
+  position: relative;
+  padding: 0 65px;
+  text-align: center;
+  font-family: Europa-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 52px;
+}
+
+h4{
+  font-family: YuGothic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  margin: 0 0;
+
+}
+
+p{
+  font-family: YuGothic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  /* or 150% */
+  letter-spacing: 0.05em;  
+}
+
+
+
+
+
+
+/* カラー */
+.white{
+  color: white;
+}
+
+
+/* 開発用 */
+.blank240{ /*空白スペース*/
+  height: 240px;
+}
+
+.mg-auto{
+  margin: 0 auto;
+}
+
+.mg-120{
+  margin-bottom:120px;
+}
+
+.mg-40{
+  margin-bottom: 40px;
+}
+
+.mg-16{
+  margin-bottom: 16px;
+}
+
+.mg-4{
+  margin-bottom: 4px;
+}
+
+.mgr-60{
+  margin-right: 60px;
+}
+
+.mgr-16{
+  margin-right: 16px;
+}
+
+.mgr-4{
+  margin-right: 4px;
+}
+
+
+@media (max-width: 599px) {
+  .top{
+    max-width: 343px;
+    margin: 0 auto;
+  }
+
+  .mobile-hidden{
+    display: none;
+  }
+
+  .container{
+    max-width: 343px;
+    margin: 0 16px;
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+
+  /*TOP*/
+  .hakaru{
+      height: 84px;
+      width: 280px;
+      margin-bottom: 60px;
+  }
+
+
+
+  /*ABOUT*/
+
+
+
+
+  /*共通要素*/
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.05em;
+    padding: 0;
+  }
+
+  p{
+    line-height: 22px;
+    margin: 0;
+    /* or 150% */
+    letter-spacing: 0.03em; 
+  }
+  
 }
