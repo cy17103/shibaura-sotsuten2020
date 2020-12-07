@@ -5,6 +5,7 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 
+
 import CloseIcon from '../img/close.svg';
 import MenuIcon from '../img/menu.svg';
 
@@ -55,7 +56,7 @@ export default function TemporaryDrawer() {
       </div>
       
       <List>
-        {[{value:'HOME',sub:'ホーム',link:''},{value:'ABOUT',sub:'展覧会について',link:''},{value:'WORKS',sub:'展示作品一覧',link:''},{value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:''},{value:'CONTACT',sub:'お問い合わせ',link:''}].map((item) => (
+        {[{value:'HOME',sub:'ホーム',link:'/'},{value:'ABOUT',sub:'展覧会について',link:'/About'},{value:'WORKS',sub:'展示作品一覧',link:'/'},{value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:'/'},{value:'CONTACT',sub:'お問い合わせ',link:'/'}].map((item) => (
           <SlideMenuButton 
           value={item.value}
           sub={item.sub}

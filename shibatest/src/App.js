@@ -1,15 +1,18 @@
 import './App.css';
+import './Style.css';
+import { BrowserRouter as Router, Route ,Link} from '../node_modules/react-router-dom';
+import About from './About';
 
 import Btn from './components/Btn';
 import Scroll from './components/Scroll';
-import Header from './components/Header';
+
 import SnsVertical from './components/SnsVertical';
 import BtnAttention from './components/BtnAttention';
 import WorksItem from './components/WorksItem';
 import TopSection from './components/TopSection';
 import NewsItem from './components/NewsItem'
 import PortfolioItem from './components/PortfolioItem'
-import Footer from './components/Footer'
+
 import { TwitterTimelineEmbed } from '../node_modules/react-twitter-embed'
 import Iframe from '../node_modules/react-iframe'
 
@@ -21,11 +24,12 @@ import Hakaru from '../src/img/hakaru.png';
 
 
 
+
 function App() {
 
   return (
     <div className="Top">
-      <Header />
+      
       <div className="mobile-hidden"><SnsVertical /></div>
       <div className="top-container">
 
@@ -341,10 +345,22 @@ function App() {
             </div>
           </div>
         </div>
+
         
-        <Btn
-          text='詳しく見る'
-        />
+
+
+        
+        <div>
+          <Link to="/About/#greeting">
+              <Btn
+              text='詳しく見る'
+              />
+          </Link>
+        </div>
+          
+
+
+        
 
       </div>
 
@@ -393,7 +409,7 @@ function App() {
       </div>
 
       
-      <Footer />
+
 
     </div>
   );

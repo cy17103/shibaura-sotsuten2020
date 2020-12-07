@@ -1,0 +1,92 @@
+/*ページ共通要素*/
+
+h1 {
+    position: relative;
+    padding: 0 65px;
+    text-align: center;
+    font-family: Europa-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 52px;
+  }
+
+h2{
+    font-family: YuGothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    color: #212121;
+}
+
+
+h4{
+font-family: YuGothic;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+letter-spacing: 0.05em;
+margin: 0 0;
+
+}
+
+p{
+font-family: YuGothic;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+margin: 0;
+/* or 150% */
+letter-spacing: 0.05em;  
+}
+
+  
+  /* カラー */
+  .white{
+    color: white;
+  }
+  
+  
+  /* 開発用 */
+  .blank240{ /*空白スペース*/
+    height: 240px;
+  }
+  
+  .mg-auto{
+    margin: 0 auto;
+  }
+  
+  .mg-120{
+    margin-bottom:120px;
+  }
+  
+  .mg-40{
+    margin-bottom: 40px;
+  }
+  
+  .mg-16{
+    margin-bottom: 16px;
+  }
+  
+  .mg-4{
+    margin-bottom: 4px;
+  }
+  
+  .mgr-60{
+    margin-right: 60px;
+  }
+  
+  .mgr-16{
+    margin-right: 16px;
+  }
+  
+  .mgr-4{
+    margin-right: 4px;
+  }
