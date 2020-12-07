@@ -1,6 +1,6 @@
 import React from 'react';
 import './TopSection.css';
-import '../style.css';
+import '../Style.css';
 
 class TopSection extends React.Component{
 
