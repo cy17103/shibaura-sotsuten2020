@@ -35,7 +35,7 @@ function App() {
     {title:'研究タイトル4',lab:'研究室名4', name:'芝浦太郎',image:'WorksItemBG04.png'},
     {title:'研究タイトル5',lab:'研究室名5', name:'芝浦太郎',image:'WorksItemBG05.png'},
   ];
-  
+
   const lowerWorksArray = [//下段
     {title:'研究タイトル6',lab:'研究室名6', name:'芝浦太郎',image:'WorksItemBG06.png'},
     {title:'研究タイトル7',lab:'研究室名7', name:'芝浦太郎',image:'WorksItemBG07.png'},
@@ -73,7 +73,7 @@ function App() {
         <BtnAttention/>
       </div>
       
-      
+      {/* works */}      
       <div className="mg-120" id="works">
         <div className="works-list">
           <div class="upper-loop-wrap">
@@ -149,9 +149,6 @@ function App() {
         />
       </div>
 
-
-
-
       {/* news */}
       <div className="container">
           <TopSection 
@@ -160,21 +157,21 @@ function App() {
           
           <div className="news-list">
             <NewsItem 
-              image='../img/news-default.png'
+              image='news-default.png'
               date='2020.10.30'
               title='ニュースのタイトルニュースのタイトルニュースのタイトル'
               text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
             />
 
             <NewsItem 
-              image='../img/news-default.png'
+              image='news-default.png'
               date='2020.10.30'
               title='ニュースのタイトル'
               text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
             />
 
             <NewsItem 
-              image='../img/news-default.png'
+              image='news-default.png'
               date='2020.10.30'
               title='ニュースのタイトル'
               text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
