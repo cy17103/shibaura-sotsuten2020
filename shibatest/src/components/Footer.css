@@ -36,13 +36,14 @@
     margin-bottom: 28px;
 }
 
-.ankerlink-textlink{
+.ankerlink a{
     color: #fff;
     text-decoration: none;
     transition: all 0.3s;
+
 }
 
-.ankerlink-textlink:hover{
+.ankerlink a:hover{
     color: #EB548A;
 }
 
@@ -125,13 +126,11 @@
         margin: 0;
     }
 
-    .footer-center{
-
-    }
 
     .ankerlink{
         flex-direction: column;
         text-align: left;
+
     }
 
     .footer-right{

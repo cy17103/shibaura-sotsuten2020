@@ -13,10 +13,12 @@ function About() {
 
   return (
     <div className="About">
+        
         <PageTop 
             title="ABOUT"
             text="展覧会について"
         />
+        
         <div className="container">
             
             <div className="greeting" id="greeting">

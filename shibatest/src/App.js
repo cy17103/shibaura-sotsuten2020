@@ -27,6 +27,26 @@ import Hakaru from '../src/img/hakaru.png';
 
 function App() {
 
+  /*  worksItemに渡すデータ */
+  const upperWorksArray = [//上段
+    {title:'研究タイトル1',lab:'研究室名1', name:'芝浦太郎',image:'WorksItemBG01.png'},
+    {title:'研究タイトル2',lab:'研究室名2', name:'芝浦太郎',image:'WorksItemBG02.png'},
+    {title:'研究タイトル3',lab:'研究室名3', name:'芝浦太郎',image:'WorksItemBG03.png'},
+    {title:'研究タイトル4',lab:'研究室名4', name:'芝浦太郎',image:'WorksItemBG04.png'},
+    {title:'研究タイトル5',lab:'研究室名5', name:'芝浦太郎',image:'WorksItemBG05.png'},
+  ];
+  
+  const lowerWorksArray = [//下段
+    {title:'研究タイトル6',lab:'研究室名6', name:'芝浦太郎',image:'WorksItemBG06.png'},
+    {title:'研究タイトル7',lab:'研究室名7', name:'芝浦太郎',image:'WorksItemBG07.png'},
+    {title:'研究タイトル8',lab:'研究室名8', name:'芝浦太郎',image:'WorksItemBG08.png'},
+    {title:'研究タイトル9',lab:'研究室名9', name:'芝浦太郎',image:'WorksItemBG09.png'},
+    {title:'研究タイトル10',lab:'研究室名10', name:'芝浦太郎',image:'WorksItemBG10.png'},
+  ];
+  
+
+
+
   return (
     <div className="Top">
       
@@ -58,171 +78,68 @@ function App() {
         <div className="works-list">
           <div class="upper-loop-wrap">
             <ul>
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG01.png"
+            {upperWorksArray.map((work) =>{
+              return(
+              <li>
+                <WorksItem 
+                  title={work.title}
+                  lab={work.lab}
+                  name={work.name}
+                  image={work.image}
                 />
               </li>
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG02.png"
-                />
-              </li>              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG03.png"
-                />
-              </li>              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG04.png"
-                />
-              </li>              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG05.png"
-                />
-              </li>
+              )
+            })}
             </ul>
 
             <ul>
-            <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG01.png"
-                />
-              </li>              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG02.png"
-                />
-              </li>              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG03.png"
-                />
-              </li>              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG04.png"
-                />
-              </li>              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG05.png"
+            {upperWorksArray.map((work) =>{
+              return(
+              <li>
+                <WorksItem 
+                  title={work.title}
+                  lab={work.lab}
+                  name={work.name}
+                  image={work.image}
                 />
               </li>
+              )
+            })}
             </ul>
+
           </div>
           
           <div class="loop-wrap mg-40">
-          <ul>
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG06.png"
-                />
-              </li>
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG07.png"
-                />
-              </li>             
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG08.png"
-                />
-              </li>          
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG09.png"
-                />
-              </li>              
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG10.png"
-                />
-              </li>
+            <ul>
+              {lowerWorksArray.map((work) =>{
+                return(
+                <li>
+                  <WorksItem 
+                    title={work.title}
+                    lab={work.lab}
+                    name={work.name}
+                    image={work.image}
+                  />
+                </li>
+                )
+              })}
             </ul>
 
             <ul>
-            <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG06.png"
-                />
-              </li>              
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG07.png"
-                />
-              </li>              
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG08.png"
-                />
-              </li>              
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG09.png"
-                />
-              </li>              
-              <li><WorksItem 
-                  className="works-item"
-                  title="研究タイトル研究タイトル研究タイトル研究タイトル"
-                  lab="研究室名"
-                  name="芝浦太郎"
-                  image="WorksItemBG10.png"
+            {lowerWorksArray.map((work) =>{
+              return(
+              <li>
+                <WorksItem 
+                  title={work.title}
+                  lab={work.lab}
+                  name={work.name}
+                  image={work.image}
                 />
               </li>
+              )
+            })}
             </ul>
+
           </div>
         </div>
 
