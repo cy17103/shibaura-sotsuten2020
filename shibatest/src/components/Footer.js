@@ -3,6 +3,7 @@ import './Footer.css';
 import Logo from '../img/logo-white.svg';
 import Icon from '@material-ui/core/Icon';
 import SnsShare from './SnsShare';
+import {Link} from '../../node_modules/react-router-dom';
 
 
 
@@ -18,13 +19,13 @@ class Footer extends React.Component{
 
                         <div className="footer-center">
                             <div className="ankerlink">
-                                <a href="#" className="ankerlink-textlink">ABOUT</a>
+                                <Link to="/About">ABOUT</Link>
                                 <p className="slash">/</p>
-                                <a href="#" className="ankerlink-textlink">WORKS</a>
+                                <Link to="/">WORKS</Link>
                                 <p className="slash">/</p>
-                                <a href="#" className="ankerlink-textlink">PORTFOLIO</a>
+                                <Link to="/">PORTFOLIO</Link>
                                 <p className="slash">/</p>
-                                <a href="#" className="ankerlink-textlink">CONTACT</a>
+                                <Link to="/">CONTACT</Link>
                             </div>
 
                             <div className="mg-auto"><SnsShare color='#ffffff'/></div>
