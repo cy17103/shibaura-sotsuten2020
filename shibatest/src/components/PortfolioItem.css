@@ -1,6 +1,6 @@
 .portfolio-item-container{
     width: 268px;
-    height: 268px;
+
     border-radius: 4px;
 
     text-align: left;
@@ -12,6 +12,20 @@
     overflow: hidden;
 
     margin-bottom: 16px;
+}
+
+.portfolio-item-container:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.portfolio-item-bg{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    transition: all 0.5s;
 }
 
 .portfolio-item-contents{
@@ -28,4 +42,14 @@
 
 .portfolio-item-container:hover .portfolio-item-contents{
     transform: translateY(-56px);
+}
+
+
+@media (max-width: 599px) {
+    .portfolio-item-container{
+        width: calc(46%);
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
 }

@@ -43,7 +43,23 @@ function App() {
     {title:'研究タイトル9',lab:'研究室名9', name:'芝浦太郎',image:'WorksItemBG09.png'},
     {title:'研究タイトル10',lab:'研究室名10', name:'芝浦太郎',image:'WorksItemBG10.png'},
   ];
+
+  /*  NewsItemに渡すデータ */
+
+  const NewsArray = [
+    {date:'2020.10.30',title:'ニュースのタイトル',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力',image:'news-default.png'},
+    {date:'2020.10.30',title:'ニュースのタイトル2',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力',image:'news-default.png'},
+    {date:'2020.10.30',title:'ニュースのタイトル3',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力',image:'news-default.png'},
+  ];
   
+  /*  portfolioItemに渡すデータ */
+  const PortfolioArray = [
+    {status:'UI/UX',name:'橋本環奈',image:'PortfolioBG01.png',className:"mgr-16"},
+    {status:'プロダクト',name:'高橋一生',image:'PortfolioBG02.png',className:"mgr-16"},
+    {status:'生産',name:'斎藤工',image:'PortfolioBG03.png',className:"mgr-16"},
+    {status:'ロボティクス',name:'手越祐也',image:'PortfolioBG04.png'},
+  ];
+
 
 
 
@@ -51,6 +67,8 @@ function App() {
     <div className="Top">
       
       <div className="mobile-hidden"><SnsVertical /></div>
+
+      {/* top */} 
       <div className="top-container">
 
         <p>芝浦工業大学デザイン工学部卒業・修了研究展2021</p>     
@@ -144,8 +162,9 @@ function App() {
         </div>
 
         <Btn 
-          text='作品一覧を見る'
+          text='展示作品一覧を見る'
           ic='true'
+          link='/'
         />
       </div>
 
@@ -156,26 +175,18 @@ function App() {
           />
           
           <div className="news-list">
-            <NewsItem 
-              image='news-default.png'
-              date='2020.10.30'
-              title='ニュースのタイトルニュースのタイトルニュースのタイトル'
-              text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
-            />
 
-            <NewsItem 
-              image='news-default.png'
-              date='2020.10.30'
-              title='ニュースのタイトル'
-              text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
-            />
-
-            <NewsItem 
-              image='news-default.png'
-              date='2020.10.30'
-              title='ニュースのタイトル'
-              text='公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力'
-            />            
+          {NewsArray.map((news) =>{
+              return(
+                <NewsItem 
+                  date={news.date}
+                  title={news.title}
+                  text={news.text}
+                  image={news.image}
+                />
+              )
+            })}
+         
           </div>
 
       </div>
@@ -185,35 +196,26 @@ function App() {
         <TopSection 
           sectionTitle='PORTFOLIO'
         />
-        <p className="portfolio-text mg-40">デザイン工学部の学生にポートフォリオを公開していただきました〜〜〜ご覧ください。</p>
+        <p className="portfolio-text">デザイン工学部の学生にポートフォリオを公開していただきました〜〜〜ご覧ください。</p>
 
-        <div className="portfolio-list mg-40">
-          <PortfolioItem 
-            status='UI/UX'
-            className={"mgr-16"}
-          />
-
-          <PortfolioItem 
-            status='プロダクト'
-            className={"mgr-16"}
-          />
-
-          <PortfolioItem 
-            status='生産'
-            className={"mgr-16"}
-          />
-
-          <PortfolioItem 
-            status='ロボティクス'
-          />
+        <div className="portfolio-list">
+          {PortfolioArray.map((portfolio) =>{
+              return(
+                <PortfolioItem 
+                  status={portfolio.status}
+                  name={portfolio.name}
+                  image={portfolio.image}
+                  className={portfolio.className}
+                />
+              )
+            })}
         </div>
-
+         
         <Btn 
           text='ポートフォリオ一覧を見る'
           ic='true'
+          link='/'
         />
-
-      
 
       </div>
 
@@ -265,11 +267,10 @@ function App() {
 
         
         <div>
-          <Link to="/About/#greeting">
               <Btn
               text='詳しく見る'
+              link='/About'
               />
-          </Link>
         </div>
           
 
@@ -284,7 +285,7 @@ function App() {
           sectionTitle='SNS'
         />
 
-        <p className="portfolio-text mg-40">運営スタッフによるSNSアカウントです。<br></br>最新情報はこちらからチェックできます。</p>
+        <p className="portfolio-text">運営スタッフによるSNSアカウントです。<br></br>最新情報はこちらからチェックできます。</p>
 
         <div className="flex">
           <div className="sns-container">
@@ -321,9 +322,6 @@ function App() {
 
         
       </div>
-
-      
-
 
     </div>
   );

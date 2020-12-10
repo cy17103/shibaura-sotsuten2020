@@ -118,19 +118,7 @@ html{
 }
 
 
-.container{
-  max-width: 1120px;
-  padding: 0 100px;
-  margin: 0 auto;
-  margin-bottom: 120px;
-  overflow: hidden;
-}
 
-.flex{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 
 
 /* works ----------------------*/
@@ -272,13 +260,14 @@ html{
 .portfolio-text{
   max-width:343px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .portfolio-list{
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  
+  margin-bottom: 40px;
 }
 
 
@@ -392,21 +381,14 @@ iframe{
 
 
 @media (max-width: 599px) {
-  .top{
-    max-width: 343px;
-    margin: 0 auto;
+  .Top{
+    width: 100%;
   }
 
   .mobile-hidden{
     display: none;
   }
 
-  .container{
-    max-width: 343px;
-    margin: 0 16px;
-    margin-bottom: 80px;
-    padding: 0;
-  }
 
 
   /*TOP*/
@@ -416,6 +398,8 @@ iframe{
       margin-bottom: 60px;
   }
 
+  /*PORTFOLIO*/
+  
 
 
   /*ABOUT*/
@@ -424,19 +408,6 @@ iframe{
 
 
   /*共通要素*/
-  h1 {
-    font-size: 40px;
-    line-height: 40px;
-    /* identical to box height, or 100% */
-    letter-spacing: 0.05em;
-    padding: 0;
-  }
 
-  p{
-    line-height: 22px;
-    margin: 0;
-    /* or 150% */
-    letter-spacing: 0.03em; 
-  }
   
 }
