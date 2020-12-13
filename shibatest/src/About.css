@@ -5,6 +5,12 @@
   background-color: grey;
 }
 
+.map{
+  width: 50%;
+  height: 260px;
+  border-radius: 8px;
+}
+
 .writername{
   text-align: right;
 }
