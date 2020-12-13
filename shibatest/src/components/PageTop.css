@@ -29,3 +29,10 @@
 .pagetop-border{
     margin: 0 auto;
 }
+
+@media (max-width: 599px) {
+    .pagetop{    
+        margin-top: 80px;
+    }
+    
+  }

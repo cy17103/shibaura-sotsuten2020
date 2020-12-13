@@ -1,10 +1,12 @@
 .header{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.2);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
+    backdrop-filter: blur(5px);
+    
 }
 
 .header-container{
@@ -14,9 +16,12 @@
 }
 
 .header-left{
-    background-image: url('../img/logo.svg');
     height: 60px;
     width: 60px;
+}
+
+.header-logo{
+    width: 100%;
 }
 
 .header-right{
@@ -30,6 +35,15 @@
 @media (max-width: 599px) {
     .header{
         max-width: 600px;
+    }
+
+    .header-left{
+        height: 52px;
+        width: 52px;
+    }
+
+    .header-right{
+        margin-top: 6px;
     }
 
     .header-container{

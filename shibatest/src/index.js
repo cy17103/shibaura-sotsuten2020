@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import About from './About'
+import Works from './Works';
 import { BrowserRouter as Router, Route ,Link} from '../node_modules/react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -20,6 +21,8 @@ ReactDOM.render(
           <Header />
           <Route exact path='/' component={App}/>
           <Route path='/About' component={About}/>
+          <Route path='/Works' component={Works}/>
+
           <Footer />
           <ScrollToTop />
 

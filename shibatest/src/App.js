@@ -164,7 +164,7 @@ function App() {
         <Btn 
           text='展示作品一覧を見る'
           ic='true'
-          link='/'
+          link='/Works'
         />
       </div>
 
