@@ -6,16 +6,26 @@ import PageTop from './components/PageTop';
 
 import aboutImage from '../src/img/aboutImage.png';
 
+var map;
+const google = window.google
+function initMap() {
+    map = new google.maps.Map(document.getElementById('about'), { // #sampleに地図を埋め込む
+        center: { // 地図の中心を指定
+              lat: 35.64353, // 緯度
+             lng: 139.74965 // 経度
+          },
+         zoom: 19 // 地図のズームを指定
+      });
+}
+
 function About() {
 
   return (
     <div className="About">
-        
         <PageTop 
             title="ABOUT"
             text="展覧会について"
         />
-        
         <div className="container">
             
             <div className="greeting" id="greeting">
@@ -32,29 +42,35 @@ function About() {
                 <br></br>
                 例年通り、大学での展示も行っております。<br></br>
                 ご興味がございましたら、ぜひお立ち寄りください。皆様のお越しを心よりお待ちしております。<br></br>
-                2020.3.10<br></br>
-                芝浦工業大学デザイン工学部卒業・修了研究展委員
+                <br></br>
+                    <div className="writername">
+                     2020.3.10<br></br>
+                      芝浦工業大学デザイン工学部卒業・修了研究展委員
+                    </div>
                 </p>
             </div>
 
             <div className="concept">
                 <h2>コンセプト</h2>
-                <ul className="conceptText">
+                <ul>
                     <li>
+                        <div className="conceptText">
                         <p>ハカる</p>
+                        </div>
                     </li>
                     <li>
-                        <p>なぜ「ハカる」にしたのか。その背景や理由などをここに記述する。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
+                        <p>なぜ「ハカる」にしたのか。その背景や理由などをここに記述す<br></br>る。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
                         <br></br>
-                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述する。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
-                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述する。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
+                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述す<br></br>る。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
+                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述す<br></br>る。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
                         <br></br>
-                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述する。卒展に込める思い、来場する人に何を伝えたいのか。</p>
+                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述す<br></br>る。卒展に込める思い、来場する人に何を伝えたいのか。</p>
                 </li>
                 </ul>
             </div>
 
             <div className="about-contents">
+             <h2>開催概要</h2>
             <img src={aboutImage} className="about-image" alt="exhibitionPoster"/>
 
                 <div className="about-texts">
@@ -90,7 +106,7 @@ function About() {
                     </div>
                 </div>
             </div>
-            {/*
+            
             <div className="access">
                 <h2>アクセス</h2>
                 <ul className="accessContents">
@@ -120,7 +136,7 @@ function About() {
                     </li>
                 </ul>
             </div>
-            */}
+
         </div>
     </div>
   );
