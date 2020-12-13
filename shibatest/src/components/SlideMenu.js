@@ -57,11 +57,13 @@ export default function TemporaryDrawer() {
       
       <List>
         {[{value:'HOME',sub:'ホーム',link:'/'},{value:'ABOUT',sub:'展覧会について',link:'/About'},{value:'WORKS',sub:'展示作品一覧',link:'/Works'},{value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:'/'},{value:'CONTACT',sub:'お問い合わせ',link:'/'}].map((item) => (
+          <div onClick={toggleDrawer('right',false)}>
           <SlideMenuButton 
           value={item.value}
           sub={item.sub}
           link={item.link}
           />
+          </div>
         ))}
       </List>
 

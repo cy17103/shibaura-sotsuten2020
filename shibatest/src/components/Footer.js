@@ -19,9 +19,9 @@ class Footer extends React.Component{
 
                         <div className="footer-center">
                             <div className="ankerlink">
-                                <Link to="/About">ABOUT</Link>
+                                <Link to="/about">ABOUT</Link>
                                 <p className="slash">/</p>
-                                <Link to="/">WORKS</Link>
+                                <Link to="/works">WORKS</Link>
                                 <p className="slash">/</p>
                                 <Link to="/">PORTFOLIO</Link>
                                 <p className="slash">/</p>

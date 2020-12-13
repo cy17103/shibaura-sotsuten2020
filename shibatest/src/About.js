@@ -6,17 +6,7 @@ import PageTop from './components/PageTop';
 
 import aboutImage from '../src/img/aboutImage.png';
 
-var map;
-const google = window.google
-function initMap() {
-    map = new google.maps.Map(document.getElementById('about'), { // #sampleに地図を埋め込む
-        center: { // 地図の中心を指定
-              lat: 35.64353, // 緯度
-             lng: 139.74965 // 経度
-          },
-         zoom: 19 // 地図のズームを指定
-      });
-}
+import Icon from '@material-ui/core/Icon';
 
 function About() {
 
@@ -109,6 +99,7 @@ function About() {
             
             <div className="access">
                 <h2>アクセス</h2>
+                
                 <ul className="accessContents">
                     <li>
                     <h3>芝浦工業大学 芝浦キャンパス</h3>
@@ -120,7 +111,7 @@ function About() {
                         <h4><a href="https://www.google.co.jp/maps/place/%E8%8A%9D%E6%B5%A6%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%AD%A6%E8%8A%9D%E6%B5%A6%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9/@35.6434231,139.7494067,19.35z/data=!4m13!1m7!3m6!1s0x60188bb4d9a8052b:0xc5aaaf0b3d68e69d!2z44CSMTA4LTAwMjMg5p2x5Lqs6YO95riv5Yy66Iqd5rWm77yT5LiB55uu77yZ4oiS77yR77yUIOiKnea1puW3pealreWkp-WtpiDoip3mtabjgq3jg6Pjg7Pjg5Hjgrk!3b1!8m2!3d35.6434443!4d139.7496359!3m4!1s0x60188bb4d90f4165:0xc16d0476cce240aa!8m2!3d35.6433728!4d139.7496946?hl=ja">大きな地図で見る</a></h4>
                         </li>
                         <li>
-                        <img src="" />
+                        <Icon>open_in_new</Icon>
                         </li>
                     </ul>
 
@@ -129,14 +120,14 @@ function About() {
                         <p>JR山手線 京浜東北線「田町駅」芝浦口から徒歩3分<br></br>
                         都営地下鉄 三田線・浅草線「三田駅」から徒歩5分</p>
                     </li>
-
+                        
                     <li>
                     
                     <iframe className="map" src="https://maps.google.co.jp/maps?output=embed&t=m&hl=ja&z=18&ll=35.6433503734224, 139.7496825387055&q=35.6433503734224, 139.7496825387055" frameborder="0" scrolling="no" width="auto"></iframe>
                     </li>
                 </ul>
             </div>
-
+        
         </div>
     </div>
   );

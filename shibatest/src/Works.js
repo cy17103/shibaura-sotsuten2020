@@ -1,22 +1,45 @@
 import './Works.css';
 import './Style.css';
-import { BrowserRouter as Router, Route ,Link} from 'react-router-dom';
+
+import { motion } from '../node_modules/framer-motion';
 
 import SnsVertical from './components/SnsVertical';
 import PageTop from './components/PageTop';
 
 import WorksPagenation from './components/WorksPagenation';
 
+const containerVariants ={
+  hidden:{
+      opacity:0
+  },
+
+  visible:{
+      opacity:1,
+      transition:{
+          delay:0.4,
+          duration:0.8,
+          when:"beforeChildren"
+      }
+  },
+  exit:{
+      opacity:0,
+      transition:{
+        delay:0.4,
+        duration:0.8
+      }
+  }
+}
+
 function Works() {
-
-
-
-  const number = 12;
-  
 
   return (
 
-    <div className="Works">
+    <motion.div 
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      className="Works">
       
         <div className="mobile-hidden"><SnsVertical /></div>
         <PageTop 
@@ -31,7 +54,7 @@ function Works() {
         <div className="mg-80"></div>
 
          
-    </div>
+    </motion.div>
   );
 }
 
