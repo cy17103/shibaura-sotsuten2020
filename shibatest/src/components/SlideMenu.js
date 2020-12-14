@@ -50,7 +50,7 @@ export default function TemporaryDrawer() {
     >
 
       <div className="slide-menu-header" >
-        <div className="slide-menu-close" onClick={toggleDrawer('right',false)}>
+        <div className="slide-menu-ic" onClick={toggleDrawer('right',false)}>
             <img src={CloseIcon} alt="CloseIcon" />
         </div>
       </div>
@@ -82,7 +82,8 @@ export default function TemporaryDrawer() {
     <div className="slide-menu">
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
-            <img src={MenuIcon} onClick={toggleDrawer(anchor, true)} alt="MenuIcon" />
+            <div className=" slide-menu-ic" onClick={toggleDrawer(anchor, true)} >
+            <img src={MenuIcon} alt="MenuIcon" /></div>
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>

@@ -15,6 +15,7 @@ function About() {
         <PageTop 
             title="ABOUT"
             text="展覧会について"
+            current="ABOUT"
         />
         <div className="container">
             

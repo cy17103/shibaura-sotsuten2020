@@ -14,17 +14,17 @@ import PortfolioItem from './components/PortfolioItem'
 
 import { TwitterTimelineEmbed } from '../node_modules/react-twitter-embed'
 import Iframe from '../node_modules/react-iframe'
-import { motion ,AnimatePresence} from '../node_modules/framer-motion';
+import { motion,AnimatePresence} from '../node_modules/framer-motion';
 
 import IcTwitter from '../src/img/twitter-white.svg';
 import IcFacebook from '../src/img/facebook-white.svg';
 import aboutImage from '../src/img/aboutImage.png';
 import Hakaru from '../src/img/hakaru.png';
-import ScrollToTop from './components/ScrollToTop';
 
 
 
-const containerVariants ={
+
+const containerVariants = {
   hidden:{
     opacity:0
   },
@@ -33,7 +33,7 @@ const containerVariants ={
       transition:{
             delay:0.4,
             duration:0.8,
-            when:"beforeChildren"
+            
       }
   },
   exit:{
@@ -45,8 +45,17 @@ const containerVariants ={
   }
 }
 
-
-
+const childVariants = {
+  hidden:{
+    scale:0.9
+  },
+  visible:{
+    scale:1,
+    transition:{
+      duration:1.4,
+    },
+  }
+}
 
 function Home() {
 
@@ -85,7 +94,6 @@ function Home() {
 
 
   return (
-    
     <motion.div 
       variants={containerVariants}
       initial="hidden"
@@ -100,10 +108,8 @@ function Home() {
 
       {/* top */} 
       <div className="top-container">
-
-        <p>
-            芝浦工業大学デザイン工学部卒業・修了研究展2021
-        </p>     
+        <motion.div variants={childVariants}>
+        <p className="top-exhibition-title"><span>芝浦工業大学デザイン工学部<br class="br-sp"></br>卒業・修了研究展2021</span></p> 
 
         <img src={Hakaru}  className="hakaru" alt="Hakaru"/>
         <div className="exhibition-date">
@@ -120,14 +126,15 @@ function Home() {
         <div className="exhibition-time">
             10:00-18:00 [入場無料]
         </div>   
-        
+        </motion.div>
         <Scroll />
 
         <BtnAttention/>
       </div>
       
       {/* works */}      
-      <div className="mg-120" id="works">
+      <div className="mg-120">
+        <a className="test" id="works-list"></a>
         <div className="works-list">
           <div class="upper-loop-wrap">
             <ul>
@@ -344,8 +351,8 @@ function Home() {
             </a>
 
             <div className="twitter-embed">
-              <Iframe url="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshibauradesign2020%2F&tabs=timeline&width=440&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-              width="440px"
+              <Iframe url={`https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshibauradesign2020%2F&tabs=timeline&width=440&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId`}
+              width="100%"
               height="300px"
               id="myId"
               className="myClassname"
@@ -359,7 +366,6 @@ function Home() {
       </div>
       
     </motion.div>
-
 
             
   );

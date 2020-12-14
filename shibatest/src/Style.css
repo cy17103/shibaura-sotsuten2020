@@ -110,6 +110,10 @@ letter-spacing: 0.05em;
     margin-right: 4px;
   }
 
+  .br-sp{
+    display: none;
+  }
+
   @media (max-width: 599px) {
 
     .container{
@@ -133,6 +137,11 @@ letter-spacing: 0.05em;
       /* or 150% */
       letter-spacing: 0.03em; 
     }
+
+    .br-sp{
+      display: inline;
+    }
+
 
 
   }

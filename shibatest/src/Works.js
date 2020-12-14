@@ -45,6 +45,7 @@ function Works() {
         <PageTop 
             title="WORKS"
             text="展示作品一覧"
+            current="WORKS"
         />
 
         <div className="works-wrapper">

@@ -26,16 +26,16 @@ function App() {
               <Header />
             </motion.div>
   
-            <AnimatePresence exitBeforeEnter initial={false}>
+            <AnimatePresence exitBeforeEnter>
               <Switch location={location} key={rootPath}>
                 <Route path="/about" component={About} />
                 <Route path="/works" component={Works} />
-                <Route exact path="/"><Home /></Route>
-
+                <Route path="/" component={Home} />
               </Switch>
-              
             </AnimatePresence>
+
             <ScrollToTop />
+
             <Footer />
 
   
