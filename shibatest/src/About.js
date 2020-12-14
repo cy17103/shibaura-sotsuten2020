@@ -6,8 +6,7 @@ import PageTop from './components/PageTop';
 
 import aboutImage from '../src/img/aboutImage.png';
 
-
-
+import Icon from '@material-ui/core/Icon';
 
 function About() {
 
@@ -16,6 +15,7 @@ function About() {
         <PageTop 
             title="ABOUT"
             text="展覧会について"
+            current="ABOUT"
         />
         <div className="container">
             
@@ -33,29 +33,35 @@ function About() {
                 <br></br>
                 例年通り、大学での展示も行っております。<br></br>
                 ご興味がございましたら、ぜひお立ち寄りください。皆様のお越しを心よりお待ちしております。<br></br>
-                2020.3.10<br></br>
-                芝浦工業大学デザイン工学部卒業・修了研究展委員
+                <br></br>
+                    <div className="writername">
+                     2020.3.10<br></br>
+                      芝浦工業大学デザイン工学部卒業・修了研究展委員
+                    </div>
                 </p>
             </div>
 
             <div className="concept">
                 <h2>コンセプト</h2>
-                <ul className="conceptText">
+                <ul>
                     <li>
+                        <div className="conceptText">
                         <p>ハカる</p>
+                        </div>
                     </li>
                     <li>
-                        <p>なぜ「ハカる」にしたのか。その背景や理由などをここに記述する。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
+                        <p>なぜ「ハカる」にしたのか。その背景や理由などをここに記述す<br></br>る。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
                         <br></br>
-                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述する。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
-                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述する。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
+                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述す<br></br>る。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
+                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述す<br></br>る。卒展に込める思い、来場する人に何を伝えたいのか。<br></br>
                         <br></br>
-                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述する。卒展に込める思い、来場する人に何を伝えたいのか。</p>
+                        なぜ「ハカる」にしたのか。その背景や理由などをここに記述す<br></br>る。卒展に込める思い、来場する人に何を伝えたいのか。</p>
                 </li>
                 </ul>
             </div>
 
             <div className="about-contents">
+             <h2>開催概要</h2>
             <img src={aboutImage} className="about-image" alt="exhibitionPoster"/>
 
                 <div className="about-texts">
@@ -91,9 +97,10 @@ function About() {
                     </div>
                 </div>
             </div>
-            {/*
+            
             <div className="access">
                 <h2>アクセス</h2>
+                
                 <ul className="accessContents">
                     <li>
                     <h3>芝浦工業大学 芝浦キャンパス</h3>
@@ -102,10 +109,10 @@ function About() {
 
                     <ul className="list2">
                         <li>
-                        <h4>大きな地図で見る</h4>
+                        <h4><a href="https://www.google.co.jp/maps/place/%E8%8A%9D%E6%B5%A6%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%AD%A6%E8%8A%9D%E6%B5%A6%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9/@35.6434231,139.7494067,19.35z/data=!4m13!1m7!3m6!1s0x60188bb4d9a8052b:0xc5aaaf0b3d68e69d!2z44CSMTA4LTAwMjMg5p2x5Lqs6YO95riv5Yy66Iqd5rWm77yT5LiB55uu77yZ4oiS77yR77yUIOiKnea1puW3pealreWkp-WtpiDoip3mtabjgq3jg6Pjg7Pjg5Hjgrk!3b1!8m2!3d35.6434443!4d139.7496359!3m4!1s0x60188bb4d90f4165:0xc16d0476cce240aa!8m2!3d35.6433728!4d139.7496946?hl=ja">大きな地図で見る</a></h4>
                         </li>
                         <li>
-                        <img src="" />
+                        <Icon>open_in_new</Icon>
                         </li>
                     </ul>
 
@@ -114,13 +121,14 @@ function About() {
                         <p>JR山手線 京浜東北線「田町駅」芝浦口から徒歩3分<br></br>
                         都営地下鉄 三田線・浅草線「三田駅」から徒歩5分</p>
                     </li>
-
+                        
                     <li>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12969.460856460524!2d139.7496943!3d35.6433726!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc16d0476cce240aa!2z6Iqd5rWm5bel5qWt5aSn5a2m6Iqd5rWm44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1606932579168!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    
+                    <iframe className="map" src="https://maps.google.co.jp/maps?output=embed&t=m&hl=ja&z=18&ll=35.6433503734224, 139.7496825387055&q=35.6433503734224, 139.7496825387055" frameborder="0" scrolling="no" width="auto"></iframe>
                     </li>
                 </ul>
             </div>
-            */}
+        
         </div>
     </div>
   );

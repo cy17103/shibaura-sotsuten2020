@@ -1,0 +1,15 @@
+
+
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 599px) {
+    .works-wrapper{
+        max-width: 345px;
+        margin: 0 auto;
+    }
+    
+  }

@@ -50,18 +50,20 @@ export default function TemporaryDrawer() {
     >
 
       <div className="slide-menu-header" >
-        <div className="slide-menu-close" onClick={toggleDrawer('right',false)}>
+        <div className="slide-menu-ic" onClick={toggleDrawer('right',false)}>
             <img src={CloseIcon} alt="CloseIcon" />
         </div>
       </div>
       
       <List>
-        {[{value:'HOME',sub:'ホーム',link:'/'},{value:'ABOUT',sub:'展覧会について',link:'/About'},{value:'WORKS',sub:'展示作品一覧',link:'/'},{value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:'/'},{value:'CONTACT',sub:'お問い合わせ',link:'/'}].map((item) => (
+        {[{value:'HOME',sub:'ホーム',link:'/'},{value:'ABOUT',sub:'展覧会について',link:'/About'},{value:'WORKS',sub:'展示作品一覧',link:'/Works'},{value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:'/'},{value:'CONTACT',sub:'お問い合わせ',link:'/'}].map((item) => (
+          <div onClick={toggleDrawer('right',false)}>
           <SlideMenuButton 
           value={item.value}
           sub={item.sub}
           link={item.link}
           />
+          </div>
         ))}
       </List>
 
@@ -80,7 +82,8 @@ export default function TemporaryDrawer() {
     <div className="slide-menu">
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
-            <img src={MenuIcon} onClick={toggleDrawer(anchor, true)} alt="MenuIcon" />
+            <div className=" slide-menu-ic" onClick={toggleDrawer(anchor, true)} >
+            <img src={MenuIcon} alt="MenuIcon" /></div>
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>

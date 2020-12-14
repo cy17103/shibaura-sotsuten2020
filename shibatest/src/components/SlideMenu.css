@@ -30,7 +30,7 @@
     margin-bottom: 32px;
 }
 
-.slide-menu-close{
+.slide-menu-ic{
     width: 40px;
     height:40px;
     float: right;
@@ -38,7 +38,7 @@
     transition: all 0.3s;
 }
 
-.slide-menu-close:after{
+.slide-menu-ic:after{
     content: "";
     position: absolute;
     top: 50%;
@@ -46,17 +46,19 @@
     width: 0px;
     height: 0px;
     border-radius: 50%;
-    background-color: rgba(60,64,67,0.04);
+    background-color: rgba(60,64,67,0.05);
     transition: all 0.2s;
     
 }
 
-.slide-menu-close:hover::after{
+.slide-menu-ic:hover::after{
     top: -6px;
     left: -6px;
     width: 52px;
     height: 52px;
 }
+
+
 
 @media (max-width: 1025px) {
 
