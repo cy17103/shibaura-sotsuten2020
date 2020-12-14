@@ -111,15 +111,14 @@ html{
   
   
   /* works ----------------------*/
-  .work-list{
-
+  .work-container{
+    margin-bottom: 120px;
   }
 
-  .test{
+  .works-list{
     display: block;
     margin-top: -120px;
     padding-top: 120px;
-
   }
   
   /*loop------------*/
@@ -415,10 +414,11 @@ html{
         margin-bottom: 60px;
     }
   
-    /*PORTFOLIO*/
-    
-  
-  
+    /*WORK*/
+    .work-container{
+      margin-bottom: 60px;
+    }
+
     /*ABOUT*/
   
   

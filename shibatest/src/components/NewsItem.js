@@ -11,7 +11,7 @@ class NewsItem extends React.Component{
         
         return( 
             <div className="news-item">
-                <a href="#" target="_blank" rel="noopener noreferrer" title={this.props.title}>
+                <a href="/" target="_blank" rel="noopener noreferrer" title={this.props.title}>
                     {/*imageに指定がなければデフォルト画像を表示するようにする */}
                     <img src={src} alt="サムネイル" className="news-item-image" />
                     <p className="news-item-date">{this.props.date}</p>

@@ -8,10 +8,6 @@ class WorksTable extends React.Component{
 
     /*  worksItemに渡すデータ */
     const WorksArray = this.props.list;//データ全体
-
-    const image = this.props.image;
-    let src = `${process.env.PUBLIC_URL}/assets/${image}`;
-
     const LIST_START = (this.props.page - 1)*9;
     const LIST_END = this.props.page * 9;
 

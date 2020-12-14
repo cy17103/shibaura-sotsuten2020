@@ -69,11 +69,7 @@ letter-spacing: 0.05em;
   }
   
   
-  /* 開発用 */
-  .blank240{ /*空白スペース*/
-    height: 240px;
-  }
-  
+  /* 余白/非表示 */
   .mg-auto{
     margin: 0 auto;
   }
@@ -114,12 +110,16 @@ letter-spacing: 0.05em;
     display: none;
   }
 
+  .hidden-pc{
+    display: none;
+  }
+
   @media (max-width: 599px) {
 
     .container{
       max-width: 343px;
       margin: 0 auto;
-      margin-bottom: 80px;
+      margin-bottom: 60px;
       padding: 0;
     }
 
@@ -141,6 +141,15 @@ letter-spacing: 0.05em;
     .br-sp{
       display: inline;
     }
+
+    .hidden-sp{
+      display: none;
+    }
+
+    .hidden-pc{
+      display: block;
+    }
+  
 
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Home from'./Home';
 import About from './About';
 import Works from './Works';
-import { BrowserRouter as Router, Route ,Switch, useLocation} from '../node_modules/react-router-dom';
+import { Route ,Switch, useLocation} from '../node_modules/react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import { motion , AnimatePresence } from '../node_modules/framer-motion';
 
@@ -12,7 +12,17 @@ import Footer from './components/Footer';
 function App() {
 
   const location = useLocation();
-  const [_, rootPath] = location.pathname.split("/");
+  const rootPath = location.pathname.split("/");
+
+  const current = window.location.pathname;
+  const pageURLArr = current.split('/')[1]; 
+  let pageURLArrCategory;
+
+  if(pageURLArr === ''){
+    pageURLArrCategory = "HOME";
+  }else{
+    pageURLArrCategory = pageURLArr[1];
+  };
 
   return (
     //const location = useLocation();
@@ -23,7 +33,7 @@ function App() {
               animate={{opacity:1}}
               transition={{duration:0.4}}
             >
-              <Header />
+              <Header currentPath={pageURLArrCategory}/>
             </motion.div>
   
             <AnimatePresence exitBeforeEnter>

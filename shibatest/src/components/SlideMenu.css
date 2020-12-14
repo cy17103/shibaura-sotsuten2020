@@ -36,6 +36,7 @@
     float: right;
     position: relative;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .slide-menu-ic:after{
