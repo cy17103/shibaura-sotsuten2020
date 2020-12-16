@@ -117,7 +117,7 @@ function Home() {
                 <p>3.14</p>
                 <span className="day">SUN</span>
             </div>
-            <div className="date-border">-</div>
+            <div className="date-border">ー</div>
             <div className="date">
                 <p>3.28</p>
                 <span className="day">SUN</span>

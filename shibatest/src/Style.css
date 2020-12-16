@@ -19,15 +19,16 @@ h1 {
     position: relative;
     padding: 0 65px;
     text-align: center;
-    font-family: Europa-Light, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 50px;
     line-height: 52px;
+    letter-spacing: -0.1rem;
   }
 
 h2{
-    font-family: YuGothic;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;

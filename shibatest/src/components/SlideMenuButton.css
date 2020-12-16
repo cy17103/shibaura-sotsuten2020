@@ -6,14 +6,13 @@
 }
 
 .Button-text{
-    font-family: Europa-Light;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 32px;
     /* identical to box height */
 
-    letter-spacing: 0.05em;
     color: #212121;
     transition: all 0.3s;
 }
@@ -24,14 +23,13 @@
 }
 
 .Button-text-current{
-    font-family: Europa-Light;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 32px;
     /* identical to box height */
 
-    letter-spacing: 0.05em;
     color: #212121;
 }
 
