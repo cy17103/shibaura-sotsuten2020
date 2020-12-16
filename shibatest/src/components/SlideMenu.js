@@ -23,7 +23,10 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TemporaryDrawer() {
+
+
+
+export default function TemporaryDrawer(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -31,6 +34,25 @@ export default function TemporaryDrawer() {
     bottom: false,
     right: false,
   });
+
+  let pagesArray = [
+    {value:'HOME',sub:'ホーム',link:'/',flag:'false'},
+    {value:'ABOUT',sub:'展覧会について',link:'/About',flag:'false'},
+    {value:'WORKS',sub:'展示作品一覧',link:'/Works',flag:'false'},
+    {value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:'/Portfolio',flag:'false'},
+    {value:'CONTACT',sub:'お問い合わせ',link:'/Contact',flag:'false'}
+  ];
+
+  const currentPageName = props.currentPath.toUpperCase() ;
+
+  for(let i=0; i < pagesArray.length;i++){
+    const item = pagesArray[i];
+    if(item.value === currentPageName || currentPageName==="a"){
+      item.flag = 'true';
+    };
+
+  };
+  
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -56,12 +78,13 @@ export default function TemporaryDrawer() {
       </div>
       
       <List>
-        {[{value:'HOME',sub:'ホーム',link:'/'},{value:'ABOUT',sub:'展覧会について',link:'/About'},{value:'WORKS',sub:'展示作品一覧',link:'/Works'},{value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:'/'},{value:'CONTACT',sub:'お問い合わせ',link:'/'}].map((item) => (
-          <div onClick={toggleDrawer('right',false)}>
-          <SlideMenuButton 
+        {pagesArray.map((item) => (
+          <div onClick={toggleDrawer('right',false)} key={item.value}>
+          <SlideMenuButton  key={item.value}
           value={item.value}
           sub={item.sub}
           link={item.link}
+          flag={item.flag}
           />
           </div>
         ))}
@@ -69,7 +92,7 @@ export default function TemporaryDrawer() {
 
 
       <Divider />
-
+      
       <div className="slide-menu-sns">
           <p className="slide-menu-sns-text">Offcial SNS</p>
           <SnsShare color="#212121" />

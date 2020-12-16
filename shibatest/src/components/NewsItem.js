@@ -1,5 +1,6 @@
 import React from 'react';
 import './NewsItem.css';
+import '../Style.css'
 
 
 class NewsItem extends React.Component{
@@ -11,12 +12,17 @@ class NewsItem extends React.Component{
         
         return( 
             <div className="news-item">
-                <a href="#" target="_blank" rel="noopener noreferrer" title={this.props.title}>
+                <a href="/" target="_blank" rel="noopener noreferrer" title={this.props.title}>
                     {/*imageに指定がなければデフォルト画像を表示するようにする */}
+                    <div className="news-item-container">
                     <img src={src} alt="サムネイル" className="news-item-image" />
-                    <p className="news-item-date">{this.props.date}</p>
-                    <div className="news-item-title" >{this.props.title}</div>
-                    <p className="news-item-text">{this.props.text}</p>
+                        <div className="news-item-info">
+                            <p className="news-item-date">{this.props.date}</p>
+
+                            <div className="news-item-title" >{this.props.title}</div>
+                            <p className="news-item-text">{this.props.text}</p>
+                        </div>
+                    </div>
                 </a>
             </div>
         );

@@ -18,11 +18,11 @@ const useStyles = makeStyles((theme) => ({
       height: 20,
     },
     current: {
-        fontFamily:'Yugothic'
+        fontWeight:300
       }
   }));
 
-export default function SimpleBreadcrumbs() {
+export default function SimpleBreadcrumbs(props) {
     const classes = useStyles();
 
     return (
@@ -32,7 +32,7 @@ export default function SimpleBreadcrumbs() {
         </Link>
 
 
-    <Typography color="textPrimary" className={classes.current}>Current</Typography>
+    <Typography color="textPrimary" className={classes.current}>{props.current}</Typography>
     </Breadcrumbs>
     );
 }

@@ -14,7 +14,7 @@ import PortfolioItem from './components/PortfolioItem'
 
 import { TwitterTimelineEmbed } from '../node_modules/react-twitter-embed'
 import Iframe from '../node_modules/react-iframe'
-import { motion,AnimatePresence} from '../node_modules/framer-motion';
+import { motion} from '../node_modules/framer-motion';
 
 import IcTwitter from '../src/img/twitter-white.svg';
 import IcFacebook from '../src/img/facebook-white.svg';
@@ -79,9 +79,9 @@ function Home() {
   /*  NewsItemに渡すデータ */
 
   const NewsArray = [
-    {date:'2020.10.30',title:'ニュースのタイトル',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力',image:'news-default.png'},
-    {date:'2020.10.30',title:'ニュースのタイトル2',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力',image:'news-default.png'},
-    {date:'2020.10.30',title:'ニュースのタイトル3',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力',image:'news-default.png'},
+    {date:'2020.9.30',title:'ニュースのタイトルニュースのタイトルニュースのタイトル',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力公開先の文章やニュースの説明をここに入力',image:'NewsItemBG01.png'},
+    {date:'2020.10.30',title:'ニュースのタイトル2',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力',image:'NewsItemBG02.png'},
+    {date:'2020.11.30',title:'ニュースのタイトル3',text:'公開先の文章やニュースの説明をここに入力します。公開先の文章やニュースの説明をここに入力',image:'NewsItemBG03.png'},
   ];
   
   /*  portfolioItemに渡すデータ */
@@ -94,12 +94,14 @@ function Home() {
 
 
   return (
+    
     <motion.div 
       variants={containerVariants}
       initial="hidden"
       animate="visible"
       exit="exit"
       className="Top">
+        
 
       <div className="mobile-hidden">
         <SnsVertical />
@@ -117,7 +119,7 @@ function Home() {
                 <p>3.14</p>
                 <span className="day">SUN</span>
             </div>
-            <div className="date-border">-</div>
+            <div className="date-border">ー</div>
             <div className="date">
                 <p>3.28</p>
                 <span className="day">SUN</span>
@@ -133,14 +135,14 @@ function Home() {
       </div>
       
       {/* works */}      
-      <div className="mg-120">
-        <a className="test" id="works-list"></a>
-        <div className="works-list">
+      <div className="work-container">
+        
+        <div className="works-list" id="works-list">
           <div class="upper-loop-wrap">
             <ul>
             {upperWorksArray.map((work) =>{
               return(
-              <li>
+              <li key={work.title}>
                 <WorksItem 
                   title={work.title}
                   lab={work.lab}
@@ -155,7 +157,7 @@ function Home() {
             <ul>
             {upperWorksArray.map((work) =>{
               return(
-              <li>
+              <li key={work.title}>
                 <WorksItem 
                   title={work.title}
                   lab={work.lab}
@@ -173,7 +175,7 @@ function Home() {
             <ul>
               {lowerWorksArray.map((work) =>{
                 return(
-                <li>
+                <li key={work.title}>
                   <WorksItem 
                     title={work.title}
                     lab={work.lab}
@@ -188,7 +190,7 @@ function Home() {
             <ul>
             {lowerWorksArray.map((work) =>{
               return(
-              <li>
+              <li key={work.title}>
                 <WorksItem 
                   title={work.title}
                   lab={work.lab}
@@ -220,7 +222,7 @@ function Home() {
 
           {NewsArray.map((news) =>{
               return(
-                <NewsItem 
+                <NewsItem key={news.title}
                   date={news.date}
                   title={news.title}
                   text={news.text}
@@ -243,7 +245,7 @@ function Home() {
         <div className="portfolio-list">
           {PortfolioArray.map((portfolio) =>{
               return(
-                <PortfolioItem 
+                <PortfolioItem key={portfolio.name}
                   status={portfolio.status}
                   name={portfolio.name}
                   image={portfolio.image}
@@ -273,7 +275,7 @@ function Home() {
           <div className="about-texts">
             <div className="about-texts-row mg-16">
               <h4>展覧会名</h4>
-              <p>芝浦工業大学デザイン工学部卒業・修了研究展2021</p>
+              <p>芝浦工業大学デザイン工学部<br class="br-sp"></br>卒業・修了研究展2021</p>
             </div>
 
             <div className="about-texts-row mg-16">
@@ -284,7 +286,7 @@ function Home() {
             <div className="about-texts-row mg-16">
               <h4>会期</h4>
                 <div >
-                  <p>2021.3.14(日) - 3.28(日)<br></br>10:00 ~ 18:00 (最終入場時間 17:30)</p>
+                  <p>2021.3.14(日) - 3.28(日)<br></br>10:00 ~ 18:00 <br class="br-sp"></br>(最終入場時間 17:30)</p>
                   <p className="about-subtext">*日曜日は休校日のため、ご入場できません。<br></br>*最終開催日は17:00までの入場となります。</p>
                 </div>
             </div>
@@ -292,7 +294,7 @@ function Home() {
             <div className="about-texts-row mg-16">
               <h4>会場</h4>
               <div>
-                <p>芝浦工業大学芝浦キャンパス<br></br>〒108-8548 東京都港区芝浦3-9-14</p>
+                <p>〒108-8548 <br class="br-sp"></br>東京都港区芝浦3-9-14<br></br>芝浦工業大学 芝浦キャンパス</p>
                 <p className="about-subtext">*大学敷地内に駐車場・駐輪場はございません。</p>
               </div>
             </div>

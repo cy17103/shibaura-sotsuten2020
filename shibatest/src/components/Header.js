@@ -8,17 +8,16 @@ class Header extends React.Component{
 
     render(){
 
-
-        
         return(
             <div className="header">
                 
                 <div className="header-container">
                     <div className="header-left" ><Link to="/"><img className="header-logo" src={src} alt="logo"/></Link></div>
                     <div className="header-right">
-                        <SlideMenu />
+                        <SlideMenu currentPath={this.props.currentPath}/>
                     </div>
                 </div>
+                <div className="blur"></div>
 
             </div>
         );

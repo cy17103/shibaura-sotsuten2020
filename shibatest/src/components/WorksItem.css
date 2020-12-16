@@ -1,4 +1,5 @@
 .works-item-container{
+    position: relative;
     display: flex;
     text-align: left;
     flex-direction: column;
@@ -31,6 +32,8 @@
 
 
 .works-item-contents{
+    position: absolute;
+    top: 300px;
     height: 88px;
     z-index: 2;
     background-color: rgba(33,33,33,0.6);

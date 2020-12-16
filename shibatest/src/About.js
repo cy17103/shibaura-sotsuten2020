@@ -1,17 +1,43 @@
 import './About.css';
 import './Style.css';
-import {Link} from '../node_modules/react-router-dom';
 
+import { motion } from '../node_modules/framer-motion';
 import PageTop from './components/PageTop';
-
 import aboutImage from '../src/img/aboutImage.png';
-
 import Icon from '@material-ui/core/Icon';
+
+const containerVariants ={
+    hidden:{
+        opacity:0
+    },
+  
+    visible:{
+        opacity:1,
+        transition:{
+            delay:0.4,
+            duration:0.8,
+            when:"beforeChildren"
+        }
+    },
+    exit:{
+        opacity:0,
+        transition:{
+          delay:0.4,
+          duration:0.8
+        }
+    }
+  }
 
 function About() {
 
   return (
-    <div className="About">
+    <motion.div 
+    variants={containerVariants}
+    initial="hidden"
+    animate="visible"
+    exit="exit"
+    className="About">
+        
         <PageTop 
             title="ABOUT"
             text="展覧会について"
@@ -124,13 +150,13 @@ function About() {
                         
                     <li>
                     
-                    <iframe className="map" src="https://maps.google.co.jp/maps?output=embed&t=m&hl=ja&z=18&ll=35.6433503734224, 139.7496825387055&q=35.6433503734224, 139.7496825387055" frameborder="0" scrolling="no" width="auto"></iframe>
+                    <iframe title="GoogleMap" className="map" src="https://maps.google.co.jp/maps?output=embed&t=m&hl=ja&z=18&ll=35.6433503734224, 139.7496825387055&q=35.6433503734224, 139.7496825387055" frameborder="0" scrolling="no" width="auto"></iframe>
                     </li>
                 </ul>
             </div>
         
         </div>
-    </div>
+    </motion.div>
   );
 }
 

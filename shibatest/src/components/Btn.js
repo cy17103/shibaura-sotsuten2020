@@ -6,11 +6,6 @@ import { Link } from 'react-router-dom'
 class Btn extends React.Component{
 
     render(){
-
-    {/* props
-        text   = ボタンの文言
-        ic     = アイコンの有無（デフォルト：なし、true:あり）
-    */}
     
         let btn =( 
                     <div className="btn">

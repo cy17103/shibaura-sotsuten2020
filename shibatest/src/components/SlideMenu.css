@@ -7,7 +7,7 @@
 
 .slide-menu-sns-text{
     margin-bottom: 8px;
-    font-family: Europa-Regular;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -36,6 +36,7 @@
     float: right;
     position: relative;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .slide-menu-ic:after{

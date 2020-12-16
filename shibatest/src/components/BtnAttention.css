@@ -1,5 +1,5 @@
 .btn-attention{
-
+    position: relative;
     background-color: white;
     border: 1px solid #EF4949;
     text-align: center;
@@ -7,7 +7,18 @@
     font-family: "YuGothic","Yu Gothic";
     width: 416px;
     box-sizing: border-box;
-    transition: all 0.2s;
+}
+
+.btn-attention:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EF4949;
+    width: 0;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    z-index: 0;
 }
 
 .btn-attention-container{
@@ -21,13 +32,14 @@
     margin: 0;
     color: #EF4949;
     text-align: center;
+    transition: all 0.4s;
     width: 100%;
-    transition: all 0.2s;
+    z-index: 1;
 }
 
 /*hover*/
-.btn-attention:hover{ 
-    background-color: #EF4949;
+.btn-attention:hover::before{ 
+    width: 100%;
 }
 
 .btn-attention:hover p{
