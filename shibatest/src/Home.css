@@ -301,6 +301,8 @@ html{
   
   .about-image{
     width: 100%;
+    max-height: 328px;
+    height: auto;
     max-width: 506px;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -413,10 +415,17 @@ html{
         width: 280px;
         margin-bottom: 60px;
     }
+
+    
   
     /*WORK*/
     .work-container{
       margin-bottom: 60px;
+    }
+
+    /*NEWS*/
+    .news-list{
+      flex-direction: column;
     }
 
     /*ABOUT*/

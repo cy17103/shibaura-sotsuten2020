@@ -28,3 +28,10 @@
     writing-mode: vertical-rl;
     margin: 0;
 }
+
+@media (max-width: 768px) {
+    .sns-vertical{
+        right: 36px;
+    }
+
+}
