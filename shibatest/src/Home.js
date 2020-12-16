@@ -94,12 +94,14 @@ function Home() {
 
 
   return (
+    
     <motion.div 
       variants={containerVariants}
       initial="hidden"
       animate="visible"
       exit="exit"
       className="Top">
+        
 
       <div className="mobile-hidden">
         <SnsVertical />

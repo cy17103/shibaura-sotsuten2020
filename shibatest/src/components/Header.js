@@ -17,6 +17,7 @@ class Header extends React.Component{
                         <SlideMenu currentPath={this.props.currentPath}/>
                     </div>
                 </div>
+                <div className="blur"></div>
 
             </div>
         );

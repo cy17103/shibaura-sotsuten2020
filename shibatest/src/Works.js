@@ -39,22 +39,23 @@ function Works() {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="Works">
+      className="Works"
+    >
       
-        <div className="mobile-hidden"><SnsVertical /></div>
-        <PageTop 
-            title="WORKS"
-            text="展示作品一覧"
-            current="WORKS"
-        />
+      <div className="mobile-hidden"><SnsVertical /></div>
 
-        <div className="works-wrapper">
+      <PageTop 
+          title="WORKS"
+          text="展示作品一覧"
+          current="WORKS"
+      />
+
+      <div className="works-wrapper">
         <WorksPagenation/>
-        </div>
+      </div>
 
-        <div className="mg-80"></div>
+      <div className="mg-80"></div>
 
-         
     </motion.div>
   );
 }
