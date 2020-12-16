@@ -1,6 +1,5 @@
 import './About.css';
 import './Style.css';
-import {Link} from '../node_modules/react-router-dom';
 
 import PageTop from './components/PageTop';
 
@@ -124,7 +123,7 @@ function About() {
                         
                     <li>
                     
-                    <iframe className="map" src="https://maps.google.co.jp/maps?output=embed&t=m&hl=ja&z=18&ll=35.6433503734224, 139.7496825387055&q=35.6433503734224, 139.7496825387055" frameborder="0" scrolling="no" width="auto"></iframe>
+                    <iframe title="GoogleMap" className="map" src="https://maps.google.co.jp/maps?output=embed&t=m&hl=ja&z=18&ll=35.6433503734224, 139.7496825387055&q=35.6433503734224, 139.7496825387055" frameborder="0" scrolling="no" width="auto"></iframe>
                     </li>
                 </ul>
             </div>
