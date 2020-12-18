@@ -11,6 +11,7 @@ html{
     max-width: 1240px;
     margin: 0 100px;
   }
+
   
   .top-container{
     text-align: center;
@@ -38,17 +39,20 @@ html{
   
   .top-container p{
     font-size: 20px;
+    font-size: calc(14px + 0.5vw);
   }
   
   .top-exhibition-title{
+    margin-top: 10vh;
     margin-bottom: 20px;
     letter-spacing: 0.05rem;
   }
   
   
   .hakaru{
-    height: 160px;
-    width: 484px;
+    width: 32vw;
+    min-width: 480px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 24px;
     display: block;
@@ -59,7 +63,7 @@ html{
     display: inline-flex; 
     
     margin: 0 auto;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
   
   .date-border{
@@ -75,7 +79,7 @@ html{
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: 300;
-    font-size: 44px;
+    font-size: calc(44px + 0.8vw);
     line-height: 48px;
     /* identical to box height, or 120% */
     
@@ -85,14 +89,13 @@ html{
   
   .date{
     display: flex;
-    font-size: 40px;
   }
   
   .day{
     font-family: Josefin Sans;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: calc(16px + .2vw);
     line-height: 16px;
   }
   
@@ -100,12 +103,12 @@ html{
     font-family: YuGothic;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: calc(12px + .4vw);
     line-height: 16px;
     
     letter-spacing: 0.1em;
   
-    margin-bottom: 60px;
+    margin-bottom: 12vh;
   }
   
   
@@ -120,8 +123,8 @@ html{
 
   .works-list{
     display: block;
-    margin-top: -120px;
-    padding-top: 120px;
+    margin-top: -160px;
+    padding-top: 160px;
   }
   
   /*loop------------*/
@@ -152,29 +155,29 @@ html{
   
   @keyframes upper-loop {
     0% {
-      transform: translateX(calc(100% - 10%));
+      transform: translateX(calc(100% - 5%));
     }
     to {
-      transform: translateX(calc(-100% - 10%));
+      transform: translateX(calc(-100% - 5%));
     }
   }
   
   @keyframes upper-loop2 {
     0% {
-      transform: translateX(-10%);
+      transform: translateX(-5%);
     }
     to {
-      transform: translateX(-210%);
+      transform: translateX(-205%);
     }
   }
   
   .upper-loop-wrap ul:first-child {
-    animation: upper-loop 60s -30s linear infinite;
+    animation: upper-loop 80s -40s linear infinite;
     
   }
   
   .upper-loop-wrap ul:last-child {
-    animation: upper-loop2 60s linear infinite;
+    animation: upper-loop2 80s linear infinite;
     
   }
   
@@ -229,11 +232,11 @@ html{
   }
   
   .loop-wrap ul:first-child {
-    animation: loop 60s -30s linear infinite;
+    animation: loop 80s -40s linear infinite;
   }
   
   .loop-wrap ul:last-child {
-    animation: loop2 60s linear infinite;
+    animation: loop2 80s linear infinite;
   }
   
   .loop-wrap:hover ul {
@@ -410,12 +413,12 @@ html{
     }
     
   
-  
     /*TOP*/
 
     .hakaru{
-        height: 92px;
         width: 280px;
+        min-width: 0;
+        height: auto;
         margin-bottom: 32px;
     }
 

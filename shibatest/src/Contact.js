@@ -2,6 +2,7 @@ import './Portfolio.css';
 import './Style.css';
 
 import PageTop from './components/PageTop';
+
 import { motion } from '../node_modules/framer-motion';
 
 const containerVariants ={
@@ -43,6 +44,7 @@ function Contact() {
         />
         <div className="container">
           {/*ここに内容を追加していく */}
+
         </div>
 
     </motion.div>
