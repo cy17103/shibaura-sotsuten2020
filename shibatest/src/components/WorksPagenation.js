@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import ScrollToTop from './ScrollToTop';
 import Pagination from '@material-ui/lab/Pagination';
 import WorksTable from './WorksTable';
 

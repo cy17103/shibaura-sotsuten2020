@@ -20,14 +20,14 @@
 .slide-menu-sns{
     width: 100%;
     margin-top: 40px;
-    padding-left: 40px;
+    padding-left: 36px;
 }
 
-.slide-menu-header{
+.slide-menu-sp-header{
     height: 40px;
-    margin-top: 36px;
-    padding-right: 100px;
-    margin-bottom: 32px;
+    margin-top: 16px;
+    padding-right: 16px;
+    margin-bottom: 8px;
 }
 
 .slide-menu-ic{

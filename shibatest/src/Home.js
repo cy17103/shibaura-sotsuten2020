@@ -19,7 +19,7 @@ import { motion} from '../node_modules/framer-motion';
 import IcTwitter from '../src/img/twitter-white.svg';
 import IcFacebook from '../src/img/facebook-white.svg';
 import aboutImage from '../src/img/aboutImage.png';
-import Hakaru from '../src/img/hakaru.png';
+import Hakaru from '../src/img/hakaru.svg';
 
 
 

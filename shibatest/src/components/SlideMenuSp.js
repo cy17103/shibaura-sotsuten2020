@@ -44,10 +44,10 @@ export default function TemporaryDrawer(props) {
   ];
 
   const currentPageName = props.currentPath.toUpperCase() ;
-
+  console.log(currentPageName);
   for(let i=0; i < pagesArray.length;i++){
     const item = pagesArray[i];
-    if(item.value === currentPageName || currentPageName==="a"){
+    if(item.value === currentPageName){
       item.flag = 'true';
     };
 
@@ -71,7 +71,7 @@ export default function TemporaryDrawer(props) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
 
-      <div className="slide-menu-header" >
+      <div className="slide-menu-sp-header" >
         <div className="slide-menu-ic" onClick={toggleDrawer('right',false)}>
             <img src={CloseIcon} alt="CloseIcon" />
         </div>

@@ -24,8 +24,10 @@ function App() {
   if(pageURLArr === ''){
     pageURLArrCategory = "HOME";
   }else{
-    pageURLArrCategory = pageURLArr[1];
+    pageURLArrCategory = pageURLArr;
   };
+
+  console.log(pageURLArrCategory);
 
 
 

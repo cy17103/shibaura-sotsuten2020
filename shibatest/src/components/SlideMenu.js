@@ -47,7 +47,7 @@ export default function TemporaryDrawer(props) {
 
   for(let i=0; i < pagesArray.length;i++){
     const item = pagesArray[i];
-    if(item.value === currentPageName || currentPageName==="a"){
+    if(item.value === currentPageName){
       item.flag = 'true';
     };
 

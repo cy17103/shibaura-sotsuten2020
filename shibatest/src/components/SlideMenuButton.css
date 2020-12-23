@@ -53,3 +53,34 @@
 .default{
     padding-left: 8px;
 }
+
+
+@media (max-width: 599px) {
+    .SlideMenuButton{
+        padding-left: 24px;
+        margin-bottom: 24px;
+    }
+
+    .Button-text{
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .Button-text-current{
+        font-size:28px;
+        color: #EB548A;
+    }
+
+    .Button-subtext{
+        font-size: 14px;
+    }
+
+    .Button-subtext-current{
+        font-size: 14px;
+        color: #EB548A;
+    }
+
+    .current{
+        border: none;
+    }
+}
