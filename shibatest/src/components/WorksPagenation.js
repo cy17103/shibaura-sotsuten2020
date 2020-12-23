@@ -1,12 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import ScrollToTop from './ScrollToTop';
 import Pagination from '@material-ui/lab/Pagination';
 import WorksTable from './WorksTable';
 
 
 const WorksArray = [
-  {title:'作品のタイトル1',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
+  {title:'作品のタイトル1',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'WorksItemBG01.png'},
   {title:'作品のタイトル2',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
   {title:'作品のタイトル3',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
   {title:'作品のタイトル4',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
@@ -45,11 +45,12 @@ export default function PaginationControlled() {
   const [page, setPage] = React.useState(1);
   const handleChange = (event, value) => {
     setPage(value);
+    window.scrollTo(0, 0);
   };
 
   return (
     <div className={classes.root}>
-      <Typography><WorksTable list={WorksArray} page={page}/></Typography>
+      <WorksTable list={WorksArray} page={page}/>
       <Pagination count={count} size="large" page={page} onChange={handleChange}/>
     </div>
   );

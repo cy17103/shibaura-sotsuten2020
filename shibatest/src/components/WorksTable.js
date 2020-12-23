@@ -11,14 +11,19 @@ class WorksTable extends React.Component{
     const LIST_START = (this.props.page - 1)*9;
     const LIST_END = this.props.page * 9;
 
-    let ShowList = WorksArray.slice(LIST_START,LIST_END);
+    const LIST_START_SP = (this.props.page - 1)*8;
+    const LIST_END_SP = this.props.page * 8;
+
+
+    let ShowListPc = WorksArray.slice(LIST_START,LIST_END);
+    let ShowListTbSp = WorksArray.slice(LIST_START_SP,LIST_END_SP);
 
     return( 
         <div className="work-table">
           <p className="works-number">作品総数：{WorksArray.length}</p>
 
           <div className="work-list">
-            {ShowList.map((work) =>{
+            {ShowListPc.map((work) =>{
                 return(
                   <WorkSmall 
                     image={work.image}
@@ -30,6 +35,21 @@ class WorksTable extends React.Component{
                 )
               })}
           </div>
+
+          <div className="work-list-sp">
+            {ShowListTbSp.map((work) =>{
+                return(
+                  <WorkSmall 
+                    image={work.image}
+                    title={work.title}
+                    name={work.name}
+                    lab={work.lab}
+                  />
+                  
+                )
+              })}
+          </div>
+
         </div>
     );
     }
