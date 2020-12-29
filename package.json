@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cy17103/test/issues"
   },
-  "homepage": "https://github.com/cy17103/test#readme"
+  "homepage": "https://github.com/cy17103/test#readme",
+  "dependencies": {
+    "react-dom": "^17.0.0"
+  }
 }

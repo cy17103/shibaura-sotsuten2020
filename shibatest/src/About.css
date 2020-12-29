@@ -1,6 +1,15 @@
 /*Aboutにのみ適用する要素を記述*/
 
+<<<<<<< HEAD
 /* ごあいさつ */
+=======
+.map{
+  width: 50%;
+  height: 260px;
+  border-radius: 8px;
+}
+
+>>>>>>> b9d4cb6d6318be7ac974681e09fa97553a8e8c4e
 .writername{
   text-align: right;
 }
