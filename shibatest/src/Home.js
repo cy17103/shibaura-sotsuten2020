@@ -19,7 +19,7 @@ import { motion} from '../node_modules/framer-motion';
 import IcTwitter from '../src/img/twitter-white.svg';
 import IcFacebook from '../src/img/facebook-white.svg';
 import aboutImage from '../src/img/aboutImage.png';
-import Hakaru from '../src/img/hakaru.png';
+import Hakaru from '../src/img/hakaru.svg';
 
 
 
@@ -66,14 +66,24 @@ function Home() {
     {title:'研究タイトル3',lab:'研究室名3', name:'芝浦太郎',image:'WorksItemBG03.png'},
     {title:'研究タイトル4',lab:'研究室名4', name:'芝浦太郎',image:'WorksItemBG04.png'},
     {title:'研究タイトル5',lab:'研究室名5', name:'芝浦太郎',image:'WorksItemBG05.png'},
+    {title:'研究タイトル5',lab:'研究室名6', name:'芝浦太郎',image:'WorksItemBG06.png'},
+    {title:'研究タイトル5',lab:'研究室名7', name:'芝浦太郎',image:'WorksItemBG07.png'},
+    {title:'研究タイトル5',lab:'研究室名8', name:'芝浦太郎',image:'WorksItemBG08.png'},
+    {title:'研究タイトル5',lab:'研究室名9', name:'芝浦太郎',image:'WorksItemBG09.png'},
+    {title:'研究タイトル5',lab:'研究室名10', name:'芝浦太郎',image:'WorksItemBG10.png'},
   ];
 
   const lowerWorksArray = [//下段
-    {title:'研究タイトル6',lab:'研究室名6', name:'芝浦太郎',image:'WorksItemBG06.png'},
-    {title:'研究タイトル7',lab:'研究室名7', name:'芝浦太郎',image:'WorksItemBG07.png'},
-    {title:'研究タイトル8',lab:'研究室名8', name:'芝浦太郎',image:'WorksItemBG08.png'},
-    {title:'研究タイトル9',lab:'研究室名9', name:'芝浦太郎',image:'WorksItemBG09.png'},
-    {title:'研究タイトル10',lab:'研究室名10', name:'芝浦太郎',image:'WorksItemBG10.png'},
+    {title:'研究タイトル6',lab:'研究室名11', name:'芝浦太郎',image:'WorksItemBG10.png'},
+    {title:'研究タイトル7',lab:'研究室名12', name:'芝浦太郎',image:'WorksItemBG09.png'},
+    {title:'研究タイトル8',lab:'研究室名13', name:'芝浦太郎',image:'WorksItemBG08.png'},
+    {title:'研究タイトル9',lab:'研究室名14', name:'芝浦太郎',image:'WorksItemBG07.png'},
+    {title:'研究タイトル10',lab:'研究室名15', name:'芝浦太郎',image:'WorksItemBG06.png'},
+    {title:'研究タイトル10',lab:'研究室名16', name:'芝浦太郎',image:'WorksItemBG05.png'},
+    {title:'研究タイトル10',lab:'研究室名17', name:'芝浦太郎',image:'WorksItemBG04.png'},
+    {title:'研究タイトル10',lab:'研究室名18', name:'芝浦太郎',image:'WorksItemBG03.png'},
+    {title:'研究タイトル10',lab:'研究室名19', name:'芝浦太郎',image:'WorksItemBG02.png'},
+    {title:'研究タイトル10',lab:'研究室名20', name:'芝浦太郎',image:'WorksItemBG01.png'},
   ];
 
   /*  NewsItemに渡すデータ */
@@ -101,7 +111,6 @@ function Home() {
       animate="visible"
       exit="exit"
       className="Top">
-        
 
       <div className="mobile-hidden">
         <SnsVertical />
@@ -116,12 +125,12 @@ function Home() {
         <img src={Hakaru}  className="hakaru" alt="Hakaru"/>
         <div className="exhibition-date">
             <div className="date">
-                <p>3.14</p>
-                <span className="day">SUN</span>
+                <p>3.13</p>
+                <span className="day">SUT</span>
             </div>
             <div className="date-border">ー</div>
             <div className="date">
-                <p>3.28</p>
+                <p>3.21</p>
                 <span className="day">SUN</span>
             </div> 
         </div>

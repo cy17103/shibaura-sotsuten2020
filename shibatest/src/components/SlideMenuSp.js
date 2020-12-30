@@ -10,13 +10,13 @@ import CloseIcon from '../img/close.svg';
 import MenuIcon from '../img/menu.svg';
 
 
-import './SlideMenu.css';
+import './SlideMenuSp.css';
 import SlideMenuButton from './SlideMenuButton';
 import SnsShare from './SnsShare';
 
 const useStyles = makeStyles({
   list: {
-    width: 340,
+    width: 240,
   },
   fullList: {
     width: 'auto',
@@ -44,7 +44,7 @@ export default function TemporaryDrawer(props) {
   ];
 
   const currentPageName = props.currentPath.toUpperCase() ;
-
+  console.log(currentPageName);
   for(let i=0; i < pagesArray.length;i++){
     const item = pagesArray[i];
     if(item.value === currentPageName){
@@ -71,7 +71,7 @@ export default function TemporaryDrawer(props) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
 
-      <div className="slide-menu-header" >
+      <div className="slide-menu-sp-header" >
         <div className="slide-menu-ic" onClick={toggleDrawer('right',false)}>
             <img src={CloseIcon} alt="CloseIcon" />
         </div>

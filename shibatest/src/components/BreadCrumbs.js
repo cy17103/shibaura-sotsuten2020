@@ -3,7 +3,9 @@ import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Link from '@material-ui/core/Link';
+import Links from '@material-ui/core/Link';
+import {Link} from '../../node_modules/react-router-dom';
+
 
 import HomeIcon from '@material-ui/icons/Home';
 
@@ -27,8 +29,11 @@ export default function SimpleBreadcrumbs(props) {
 
     return (
     <Breadcrumbs aria-label="breadcrumb">
-        <Link to="/" color="inherit"  className={classes.link}>
-            <HomeIcon className={classes.icon}/>
+        
+        <Link to="/">
+        <Links className={classes.link}>
+            <HomeIcon className={classes.icon} style={{ color:"#777777",margin:0}}/>
+        </Links>
         </Link>
 
 
