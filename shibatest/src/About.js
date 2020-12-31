@@ -112,16 +112,18 @@ function About() {
                 
                         <h3>芝浦工業大学 芝浦キャンパス</h3>
                         <p>〒108-8548東京都港区芝浦3-9-14</p>
-
-                        <ul className="bigMap">
-                            <li>
-                                <h4><a href="https://www.google.co.jp/maps/place/%E8%8A%9D%E6%B5%A6%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%AD%A6%E8%8A%9D%E6%B5%A6%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9/@35.6434231,139.7494067,19.35z/data=!4m13!1m7!3m6!1s0x60188bb4d9a8052b:0xc5aaaf0b3d68e69d!2z44CSMTA4LTAwMjMg5p2x5Lqs6YO95riv5Yy66Iqd5rWm77yT5LiB55uu77yZ4oiS77yR77yUIOiKnea1puW3pealreWkp-WtpiDoip3mtabjgq3jg6Pjg7Pjg5Hjgrk!3b1!8m2!3d35.6434443!4d139.7496359!3m4!1s0x60188bb4d90f4165:0xc16d0476cce240aa!8m2!3d35.6433728!4d139.7496946?hl=ja">大きな地図で見る</a></h4>
-                            </li>
-                            <li>
-                                <Icon>open_in_new</Icon>
-                            </li>
-                        </ul>
-
+  
+                        <a href="https://www.google.co.jp/maps/place/%E8%8A%9D%E6%B5%A6%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%AD%A6%E8%8A%9D%E6%B5%A6%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9/@35.6434231,139.7494067,19.35z/data=!4m13!1m7!3m6!1s0x60188bb4d9a8052b:0xc5aaaf0b3d68e69d!2z44CSMTA4LTAwMjMg5p2x5Lqs6YO95riv5Yy66Iqd5rWm77yT5LiB55uu77yZ4oiS77yR77yUIOiKnea1puW3pealreWkp-WtpiDoip3mtabjgq3jg6Pjg7Pjg5Hjgrk!3b1!8m2!3d35.6434443!4d139.7496359!3m4!1s0x60188bb4d90f4165:0xc16d0476cce240aa!8m2!3d35.6433728!4d139.7496946?hl=ja" className="bigMap"> 
+                            <ul> 
+                                <li>
+                                    <h4>大きな地図で見る</h4>
+                                </li>
+                                <li>
+                                    <Icon>open_in_new</Icon>
+                                </li>
+                            </ul>
+                        </a>
+                        
                         <h4>電車でのアクセス</h4>
                         <p>JR山手線 京浜東北線「田町駅」芝浦口から徒歩3分<br></br>
                         都営地下鉄 三田線・浅草線「三田駅」から徒歩5分</p>

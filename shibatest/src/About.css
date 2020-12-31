@@ -76,12 +76,17 @@
   margin-bottom: 40px;
 }
 
-/* アニメーション ？？ */
-.bigMap{
+.bigMap ul{
   list-style: none;
   display:flex;
   padding: 0;
   margin: 0 0 32px 0;
+  width: 159px;
+  transition: all 0.3s;
+}
+
+.bigMap ul:hover{
+  color: #EB548A;
 }
 
 .bigMap h4{
