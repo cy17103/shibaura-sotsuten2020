@@ -135,12 +135,12 @@ function Home() {
             </div> 
         </div>
         <div className="exhibition-time">
-            10:00-18:00 [入場無料]
+            10:00-18:00 <span>[来場予約制]</span>
         </div>   
         </motion.div>
         <Scroll />
 
-        <BtnAttention/>
+        <BtnAttention text="本展覧会にご来場される方へ重要なお知らせ"/>
       </div>
       
       {/* works */}      

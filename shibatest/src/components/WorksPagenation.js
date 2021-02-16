@@ -5,39 +5,40 @@ import WorksTable from './WorksTable';
 
 const json = require('../test.json');
 let WorksArray = [];
+const labList = [
+                  {lab:'橋田研究室',formalName:'エモーショナルデザイン研究室'},
+                  {lab:'蘆澤研究室',formalName:'デザインプロモーション研究室'},
+                  {lab:'増成研究室',formalName:'デザイン史・デザイン文化研究室'},
+                  {lab:'古屋研究室',formalName:'製品計画研究室'},
+                  {lab:'吉武研究室',formalName:'ユーザーエクスペリエンスデザイン研究室'},
+                  {lab:'梁研究室',formalName:'感性インタラクションデザイン研究室'},
+                  {lab:'日高研究室',formalName:'色彩・コミュニケーションデザイン研究室'},
+                  {lab:'島田研究室',formalName:'モーションコントロール研究室'},
+                  {lab:'清水研究室',formalName:'人間支援知能ロボティクス研究室'},
+                  {lab:'野田研究室',formalName:'ソフトウェアデザイン研究室'},
+                  {lab:'山崎研究室',formalName:'コンピューティングデザイン研究室'},
+                  {lab:'安齋研究室',formalName:'形状創製工学研究室'},
+                  {lab:'安斎研究室',formalName:'形状創製工学研究室'},
+                  {lab:'田邊研究室',formalName:'リサイクルデザイン研究室'},
+                  {lab:'澤研究室',formalName:'臨床機械加工研究室'},
+                  {lab:'加藤研究室',formalName:'人・組織とデザイン研究室'},
+                ];
+
 
 for(let i=0; i < json.length;i++){
   const item = json[i];
-  WorksArray.push({id:item.id,title:item.title,name:item.name,lab:item.lab,image:'WorksItemBG01.png'})
+  let formalName = '';
+
+  for(let i = 0; i < labList.length; i++){
+    if(item.lab === labList[i].lab){
+      formalName = labList[i].formalName;
+    }
+  };
+
+
+  WorksArray.push({id:item.id,title:item.title,name:item.name,lab:formalName,image:'WorksItemBG01.png'})
 };
 
-
-/*
-const WorksArray = [
-  {title:'作品のタイトル1',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'WorksItemBG01.png'},
-  {title:'作品のタイトル2',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル3',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル4',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル5',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル6',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル7',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル8',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル9',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル10',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル11',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル12',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル13',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル14',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル15',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル16',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル17',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル18',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル19',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル20',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル21',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
-  {title:'作品のタイトル22',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'}
-];
- */
 
 const count = Math.ceil(WorksArray.length / 9);
 

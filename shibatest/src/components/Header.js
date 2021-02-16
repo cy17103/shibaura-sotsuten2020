@@ -6,6 +6,7 @@ import './Header.css';
 import '../Style.css'
 import {Link} from '../../node_modules/react-router-dom';
 import src from '../img/logo.svg';
+import BackIcon from '@material-ui/icons/ArrowBackIos';
 
 class Header extends React.Component{
 
@@ -29,7 +30,7 @@ class Header extends React.Component{
             header = (
                 <div className="header-dark">        
                 <div className="header-container-dark">
-                    <Link to="/works" className="pageBack">＜ 一覧に戻る</Link>
+                    <Link to="/works" className="pageBack"><BackIcon style={{ fontSize: 28 }} /><h4>一覧に戻る</h4></Link>
                     <div className="header-right-dark">
                         <div className="hidden-sp"><SlideMenu currentPath={this.props.currentPath}/></div>
                         <div className="hidden-pc"><SlideMenuSp currentPath={this.props.currentPath}/></div>

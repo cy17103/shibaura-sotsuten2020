@@ -8,7 +8,7 @@ class Btn extends React.Component{
         return(
             <div className="btn-attention">
                 <div className="btn-attention-container">
-                    <p>展覧会の新型コロナウイルス感染症対策について</p>
+                <p>{this.props.text}</p>
                 </div>
                 
             </div>

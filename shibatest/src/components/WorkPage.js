@@ -1,22 +1,21 @@
 import React from 'react';
 import './WorkPage.css';
 import '../Style.css';
-
-import aboutImage from '../img/aboutImage.png';
 import kanji from '../img/box-do.svg';
-
 
 class WorkPage extends React.Component{
 
     render(){
 
     const array = this.props.array;
+    let image = "workImage_"+array.id+"_01.png";
+    let src = `${process.env.PUBLIC_URL}/assets/workImageList1/${image}`;
+
         
         return( 
             <div>
                 <div className="work-imgs">
-                    <img src={aboutImage} className="work-img" alt="exhibitionPoster"/>
-                    <img src={aboutImage} className="work-img" alt="exhibitionPoster"/>
+                    <img src={src} className="work-img" alt="exhibitionPoster"/>
                 </div>
 
                 <div className="work-contents-container">
@@ -24,8 +23,8 @@ class WorkPage extends React.Component{
                         <div className="work-about">
                             <img src={kanji} className="kanji" alt="exhibitionPoster"/>
                             <div className="work-title">
-                            <div className="title">{array.title}</div>
-                            <div className="name-lab">{array.name} | {array.lab}</div>
+                                <div className="title">{array.title}</div>
+                                <div className="name-lab">{array.name} | {array.lab}</div>
                             </div>
                         </div>
                         <hr></hr>

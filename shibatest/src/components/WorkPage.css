@@ -42,6 +42,10 @@
 
 .work-title{
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .title{
