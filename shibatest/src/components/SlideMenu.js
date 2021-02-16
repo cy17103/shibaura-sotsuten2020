@@ -14,6 +14,8 @@ import './SlideMenu.css';
 import SlideMenuButton from './SlideMenuButton';
 import SnsShare from './SnsShare';
 
+
+
 const useStyles = makeStyles({
   list: {
     width: 340,
@@ -22,8 +24,6 @@ const useStyles = makeStyles({
     width: 'auto',
   },
 });
-
-
 
 
 export default function TemporaryDrawer(props) {
@@ -52,6 +52,21 @@ export default function TemporaryDrawer(props) {
     };
 
   };
+
+  let theme;
+  if(props.currentPath === 'work'){
+    theme = "#fff";
+  }else{
+    theme = "#212121";
+  }
+
+  const menuIcon = (
+    <svg width="40" height="40" viewBox="0 0 40 40" >
+        <rect y="7" width="40" height="2" fill={theme}/>
+        <rect y="19" width="40" height="2" fill={theme}/>
+        <rect y="31" width="40" height="2" fill={theme}/>
+    </svg>
+  );
   
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -106,7 +121,7 @@ export default function TemporaryDrawer(props) {
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
             <div className=" slide-menu-ic" onClick={toggleDrawer(anchor, true)} >
-            <img src={MenuIcon} alt="MenuIcon" /></div>
+            {menuIcon}</div>
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>

@@ -2,6 +2,7 @@ import React from 'react';
 import Home from'./Home';
 import About from './About';
 import Works from './Works';
+import Work from './Work';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import { Route ,Switch, useLocation} from '../node_modules/react-router-dom';
@@ -20,6 +21,8 @@ function App() {
   const current = window.location.pathname;
   const pageURLArr = current.split('/')[1]; 
   let pageURLArrCategory;
+  let header;
+  let footer;
 
   if(pageURLArr === ''){
     pageURLArrCategory = "HOME";
@@ -27,7 +30,19 @@ function App() {
     pageURLArrCategory = pageURLArr;
   };
 
+  if(pageURLArrCategory === 'work'){
+    header = <Header currentPath={pageURLArrCategory} theme ={"dark"}/>;
+  }else{
+    header = <Header currentPath={pageURLArrCategory} theme ={"right"}/>;
+    footer = <Footer />;
+  };
+
+  
+
   console.log(pageURLArrCategory);
+
+
+
 
 
 
@@ -40,7 +55,7 @@ function App() {
         animate={{opacity:1}}
         transition={{duration:0.4}}
       >
-        <Header currentPath={pageURLArrCategory}/>
+        {header}
       </motion.div>
 
       <AnimatePresence exitBeforeEnter>
@@ -49,14 +64,13 @@ function App() {
           <Route path="/works" component={Works} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
+          <Route path="/work" component={Work} />
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
 
       <ScrollToTop />
-
-      <Footer />
-
+      {footer}
     </div>
   );
 }

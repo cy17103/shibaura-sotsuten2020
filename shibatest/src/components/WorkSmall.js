@@ -11,7 +11,7 @@ class WorkSmall extends React.Component{
         
         return( 
             <div className="work-small">
-                <a href="/" title={this.props.title}>
+                <a href="/work" title={this.props.title}>
                     {/*imageに指定がなければデフォルト画像を表示するようにする */}
                     <div className="image-container"><img src={src} alt="サムネイル" className="work-small-image" /></div>
                     <div className="work-small-title" >{this.props.title}</div>

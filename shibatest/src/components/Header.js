@@ -10,12 +10,43 @@ import src from '../img/logo.svg';
 class Header extends React.Component{
 
     render(){
+        let header;
+        if (this.props.theme === "right"){
+            header = (
+                <div className="header">        
+                    <div className="header-container">
+                        {header}
+                        <div className="header-left" ><Link to="/"><img className="header-logo" src={src} alt="logo"/></Link></div>
+                        <div className="header-right">
+                            <div className="hidden-sp"><SlideMenu currentPath={this.props.currentPath}/></div>
+                            <div className="hidden-pc"><SlideMenuSp currentPath={this.props.currentPath}/></div>
+                        </div>
+                    </div>
+                    <div className="blur"></div>
+                </div>
+            );
+        }else if(this.props.theme === "dark"){
+            header = (
+                <div className="header-dark">        
+                <div className="header-container-dark">
+                    <Link to="/works" className="pageBack">＜ 一覧に戻る</Link>
+                    <div className="header-right-dark">
+                        <div className="hidden-sp"><SlideMenu currentPath={this.props.currentPath}/></div>
+                        <div className="hidden-pc"><SlideMenuSp currentPath={this.props.currentPath}/></div>
+                    </div>
+                </div>
+                <div className="blur"></div>
+            </div>
+            );
+        }
 
         return(
-            <div className="header">
-                
+            
+            <div>
+            {header}
+            {/*
                 <div className="header-container">
-                    
+                    {header}
                     <div className="header-left" ><Link to="/"><img className="header-logo" src={src} alt="logo"/></Link></div>
                     <div className="header-right">
                     <div className="hidden-sp"><SlideMenu currentPath={this.props.currentPath}/></div>
@@ -24,8 +55,9 @@ class Header extends React.Component{
                     </div>
                 </div>
                 <div className="blur"></div>
-
+            */}
             </div>
+            
         );
     }
 }
