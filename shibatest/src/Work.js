@@ -4,10 +4,15 @@ import './Style.css';
 
 import WorkPage from './components/WorkPage';
 import { motion } from 'framer-motion';
-import aboutImage from '../src/img/aboutImage.png';
-import kanji from '../src/img/box-do.svg';
+
 
 const json = require('./test.json');
+/*
+for(let i=0; i < json.length;i++){
+  const item = json[i];
+  WorksArray.push({id:item.id,title:item.title,name:item.name,lab:item.lab,image:'WorksItemBG01.png'})
+};
+ */
 
 
 const containerVariants ={
@@ -32,7 +37,12 @@ const containerVariants ={
   }
 }
 
-function Work() {
+function Work(props) {
+
+  const id = props.location.state.id;
+  const WorksArray = json[id-1];
+  console.log(WorksArray);
+  
 
   return (
 
@@ -44,8 +54,7 @@ function Work() {
       className="Work"
     >
     
-    <WorkPage/>
-  <div className="test"></div>
+    <WorkPage array={WorksArray}/>
     
     
 

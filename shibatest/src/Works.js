@@ -8,6 +8,7 @@ import PageTop from './components/PageTop';
 
 import WorksPagenation from './components/WorksPagenation';
 
+
 const containerVariants ={
   hidden:{
       opacity:0
@@ -30,7 +31,7 @@ const containerVariants ={
   }
 }
 
-function Works() {
+function Works(props) {
 
   return (
 

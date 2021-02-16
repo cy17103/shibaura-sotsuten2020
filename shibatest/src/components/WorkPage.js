@@ -10,8 +10,7 @@ class WorkPage extends React.Component{
 
     render(){
 
-    const image = this.props.image;
-    let src = `${process.env.PUBLIC_URL}/assets/${image}`;
+    const array = this.props.array;
         
         return( 
             <div>
@@ -23,16 +22,31 @@ class WorkPage extends React.Component{
                 <div className="work-contents-container">
                     <div className="work-contents">
                         <div className="work-about">
-                        <img src={kanji} className="kanji" alt="exhibitionPoster"/>
-                        <div className="work-title">
-                        <div className="title">研究タイトルです研究タイトルです研究タイトルです研究タイトルです</div>
-                        <div className="name-lab">氏名 | 研究室名</div>
-                        </div>
+                            <img src={kanji} className="kanji" alt="exhibitionPoster"/>
+                            <div className="work-title">
+                            <div className="title">{array.title}</div>
+                            <div className="name-lab">{array.name} | {array.lab}</div>
+                            </div>
                         </div>
                         <hr></hr>
-                        <div>aaa</div>
+
+                        <div className="work-content-list">
+                            <h4>研究背景</h4>
+                            <p>{array.background}</p>
+                        </div>
+
+                        <div className="work-content-list">
+                            <h4>目的</h4>
+                            <p>{array.purpose}</p>
+                        </div>
+
+                        <div className="work-content-list">
+                            <h4>結果</h4>
+                            <p>{array.result}</p>
+                        </div>
+                        <hr></hr>
                     </div>
-                    <hr></hr>
+                    
                 </div>
 
             </div>

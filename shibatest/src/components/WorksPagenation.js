@@ -3,7 +3,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import Pagination from '@material-ui/lab/Pagination';
 import WorksTable from './WorksTable';
 
+const json = require('../test.json');
+let WorksArray = [];
 
+for(let i=0; i < json.length;i++){
+  const item = json[i];
+  WorksArray.push({id:item.id,title:item.title,name:item.name,lab:item.lab,image:'WorksItemBG01.png'})
+};
+
+
+/*
 const WorksArray = [
   {title:'作品のタイトル1',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'WorksItemBG01.png'},
   {title:'作品のタイトル2',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
@@ -28,6 +37,7 @@ const WorksArray = [
   {title:'作品のタイトル21',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'},
   {title:'作品のタイトル22',name:'芝浦太郎',lab:'完成インタラクション研究室',image:'news-default.png'}
 ];
+ */
 
 const count = Math.ceil(WorksArray.length / 9);
 

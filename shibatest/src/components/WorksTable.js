@@ -3,7 +3,13 @@ import './WorksTable.css';
 
 import WorkSmall from './WorkSmall';
 
+
+
+
+
+
 class WorksTable extends React.Component{
+  
   render(){
 
     /*  worksItemに渡すデータ */
@@ -17,6 +23,7 @@ class WorksTable extends React.Component{
 
     let ShowListPc = WorksArray.slice(LIST_START,LIST_END);
     let ShowListTbSp = WorksArray.slice(LIST_START_SP,LIST_END_SP);
+    
 
     return( 
         <div className="work-table">
@@ -25,7 +32,9 @@ class WorksTable extends React.Component{
           <div className="work-list">
             {ShowListPc.map((work) =>{
                 return(
+                  
                   <WorkSmall 
+                    id={work.id}
                     image={work.image}
                     title={work.title}
                     name={work.name}
@@ -39,6 +48,7 @@ class WorksTable extends React.Component{
           <div className="work-list-sp">
             {ShowListTbSp.map((work) =>{
                 return(
+                  
                   <WorkSmall 
                     image={work.image}
                     title={work.title}
@@ -55,7 +65,7 @@ class WorksTable extends React.Component{
     }
 }
 
-export default WorksTable;
+export default WorksTable
 
 
 

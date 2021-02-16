@@ -15,7 +15,6 @@
 .work-contents-container{
   position: relative;
   background-color: #181818;
-  height: 200px;
   margin-top: 60px;
   padding: 20px 0;
 }
@@ -23,6 +22,7 @@
 .work-contents{
   width: 1024px;
   margin: 0 auto;
+  height: 365px;
 }
 
 .work-contents hr{
@@ -68,6 +68,18 @@
   letter-spacing: 0.05em;
   color: #AAA;
 }
+.work-content-list{
+  display: flex;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.work-content-list h4{
+  min-width: 80px;
+  margin-right: 20px;
+}
+
+
 
 @media (max-width: 768px) {
 
