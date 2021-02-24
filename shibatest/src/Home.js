@@ -20,6 +20,7 @@ import IcTwitter from '../src/img/twitter-white.svg';
 import IcFacebook from '../src/img/facebook-white.svg';
 import aboutImage from '../src/img/aboutImage.png';
 import Hakaru from '../src/img/hakaru.svg';
+import { Link } from '@material-ui/core';
 
 
 
@@ -141,6 +142,7 @@ function Home() {
         <Scroll />
 
         <BtnAttention text="本展覧会にご来場される方へ重要なお知らせ"/>
+        
       </div>
       
       {/* works */}      
@@ -263,12 +265,6 @@ function Home() {
               )
             })}
         </div>
-         
-        <Btn 
-          text='ポートフォリオ一覧を見る'
-          ic='true'
-          link='/'
-        />
 
       </div>
 

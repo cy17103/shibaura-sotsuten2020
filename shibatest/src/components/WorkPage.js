@@ -8,15 +8,23 @@ class WorkPage extends React.Component{
     render(){
 
     const array = this.props.array;
-    let image = "workImage_"+array.id+"_01.png";
-    let src = `${process.env.PUBLIC_URL}/assets/workImageList1/${image}`;
 
+
+    let firstSrc = `${process.env.PUBLIC_URL}/assets/workImageList1/workImage_${array.id}_01.png`;
+    let secondSrc = `${process.env.PUBLIC_URL}/assets/workImageList2/workImage_${array.id}_02.png`;
+    //複数の拡張子に対応させるか、データソースの拡張子を全て統一する
+
+    let workImages = (
+        <div className="work-imgs">
+            <img src={firstSrc} className="work-img" alt="workImage01"/>
+            <img src={secondSrc} className="work-img" alt="workImage02"/>
+        </div>
+        );
+        //３枚目があるときは横スクロールにする？
         
         return( 
             <div>
-                <div className="work-imgs">
-                    <img src={src} className="work-img" alt="exhibitionPoster"/>
-                </div>
+                {workImages}
 
                 <div className="work-contents-container">
                     <div className="work-contents">

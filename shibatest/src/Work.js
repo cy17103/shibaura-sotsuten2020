@@ -7,12 +7,7 @@ import { motion } from 'framer-motion';
 
 
 const json = require('./test.json');
-/*
-for(let i=0; i < json.length;i++){
-  const item = json[i];
-  WorksArray.push({id:item.id,title:item.title,name:item.name,lab:item.lab,image:'WorksItemBG01.png'})
-};
- */
+
 
 
 const containerVariants ={
@@ -55,33 +50,8 @@ function Work(props) {
     >
     
     <WorkPage array={WorksArray}/>
-    
-    
 
-{/* 
-    <div className="work-imgs">
-      <img src={aboutImage} className="work-img" alt="exhibitionPoster"/>
-      <img src={aboutImage} className="work-img" alt="exhibitionPoster"/>
-
-    </div>
-
-    <div className="work-contents-container">
-
-      <div className="work-contents">
-        <div className="work-about">
-        <img src={kanji} className="kanji" alt="exhibitionPoster"/>
-        <div className="work-title">
-          <div className="title">研究タイトルです研究タイトルです研究タイトルです研究タイトルです</div>
-          <div className="name-lab">氏名 | 研究室名</div>
-        </div>
-        </div>
-        <hr></hr>
-        <div>aaa</div>
-      </div>
-      <hr></hr>
-      
-    </div>
-*/}
+    {/* おすすめの作品を表示 */}
     
 
     </motion.div>

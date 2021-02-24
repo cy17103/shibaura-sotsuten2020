@@ -16,7 +16,7 @@
   h1 span {
     position: relative;
     padding: 0 1em;
-    background: #fff;
+    background: #F9FBFD;
   }
 
   @media (max-width: 599px){
