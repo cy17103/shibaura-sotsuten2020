@@ -45,7 +45,7 @@ const containerVariants ={
 
         <div className="container">
             <div className="attentionTitle">
-              <h2>本展覧会の新型コロナウイルス感染対策について</h2>
+              <h2>本展覧会の新型コロナウイルス<br class="sp"></br>感染対策について</h2>
             </div>
 
             <div className="titleTexts">

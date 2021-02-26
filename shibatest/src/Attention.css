@@ -1,6 +1,6 @@
 .attentionTitle h2{
   margin: 0;
-  margin-top: 140px;
+  margin: 140px 0 20px 0;
 }
 
 .redText{
@@ -36,7 +36,39 @@
   padding-left: 12px;
 }
 
-@media screen and (min-width: 768px){
-  .sp {display: none; }
+.sp{
+  display: none;
+}
+
+@media screen and (max-width: 375px){
+  .sp {
+    display: inline-block; 
+  }
+  .attentionTitle h2{
+    line-height: 1.5;
+    margin-top: 90px;
+    font-size: 20px;
+  }
+
+  .check1 h3{
+    font-size: 18px;
+    margin: 36px 0 12px 0;
+    border-left: solid 4px;
+    padding-left: 8px;
+  }
+
+  .check2 h3{
+    font-size: 18px;
+    margin: 36px 0 12px 0;
+    border-left: solid 4px;
+    padding-left: 8px;
+  }
+
+  .check3 h3{
+    font-size: 18px;
+    margin: 36px 0 12px 0;
+    border-left: solid 4px;
+    padding-left: 8px;
+  }
   
   }
