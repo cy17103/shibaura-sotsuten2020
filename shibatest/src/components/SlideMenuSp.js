@@ -39,7 +39,6 @@ export default function TemporaryDrawer(props) {
     {value:'HOME',sub:'ホーム',link:'/',flag:'false'},
     {value:'ABOUT',sub:'展覧会について',link:'/About',flag:'false'},
     {value:'WORKS',sub:'展示作品一覧',link:'/Works',flag:'false'},
-    {value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:'/Portfolio',flag:'false'},
     {value:'CONTACT',sub:'お問い合わせ',link:'/Contact',flag:'false'}
   ];
 

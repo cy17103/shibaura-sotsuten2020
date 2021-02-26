@@ -4,7 +4,6 @@ import About from './About';
 import Works from './Works';
 import Work from './Work';
 import Attention from './Attention';
-import Portfolio from './Portfolio';
 import Contact from './Contact';
 import { Route ,Switch, useLocation} from '../node_modules/react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
@@ -63,7 +62,6 @@ function App() {
         <Switch location={location} key={rootPath}>
           <Route path="/about" component={About} />
           <Route path="/works" component={Works} />
-          <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
           <Route path="/work" component={Work} />
           <Route path="/attention" component={Attention} />

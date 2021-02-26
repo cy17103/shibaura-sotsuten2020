@@ -1,7 +1,6 @@
 import React from 'react';
 import './WorkPage.css';
 import '../Style.css';
-import kanji from '../img/box-do.svg';
 
 class WorkPage extends React.Component{
 
@@ -10,17 +9,19 @@ class WorkPage extends React.Component{
     const array = this.props.array;
 
 
-    let firstSrc = `${process.env.PUBLIC_URL}/assets/workImageList1/workImage_${array.id}_01.png`;
-    let secondSrc = `${process.env.PUBLIC_URL}/assets/workImageList2/workImage_${array.id}_02.png`;
-    //複数の拡張子に対応させるか、データソースの拡張子を全て統一する
+    let firstSrc = `${process.env.PUBLIC_URL}/assets/workImageList1/workImage_${array.id}_01.png`; //１枚目の画像
+    let secondSrc = `${process.env.PUBLIC_URL}/assets/workImageList2/workImage_${array.id}_02.png`; //２枚目の画像
+
+    let kanji = `${process.env.PUBLIC_URL}/assets/kanji_${array.genre}.svg`; //漢字のsvg
+    
 
     let workImages = (
-        <div className="work-imgs">
-            <img src={firstSrc} className="work-img" alt="workImage01"/>
-            <img src={secondSrc} className="work-img" alt="workImage02"/>
-        </div>
+        <ul className="work-imgs">
+            <li class="item"><img src={firstSrc} className="work-img" alt="workImage01"/></li>
+            <li class="item"><img src={secondSrc} className="work-img" alt="workImage02"/></li>
+        </ul>
+
         );
-        //３枚目があるときは横スクロールにする？
         
         return( 
             <div>

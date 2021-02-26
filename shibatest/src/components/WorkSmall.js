@@ -4,10 +4,6 @@ import './WorkSmall.css';
 import { withRouter } from 'react-router';
 
 
-
-
-
-
 class WorkSmall extends React.Component{
 
     handleClick = () => {
@@ -19,8 +15,8 @@ class WorkSmall extends React.Component{
 
     render(){
 
-    const image = this.props.image;
-    let src = `${process.env.PUBLIC_URL}/assets/${image}`;
+        const image = this.props.image;
+        let src = `${process.env.PUBLIC_URL}/assets/workImageList1/workImage_${this.props.id}_01.png`;
         
         return( 
             <div className="work-small" onClick={this.handleClick}>

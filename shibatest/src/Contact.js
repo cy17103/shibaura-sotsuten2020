@@ -1,4 +1,3 @@
-import './Portfolio.css';
 import './Style.css';
 
 import PageTop from './components/PageTop';
@@ -35,7 +34,7 @@ function Contact() {
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="Portfolio"
+      className="Contact"
     >
         <PageTop 
             title="CONTACT"

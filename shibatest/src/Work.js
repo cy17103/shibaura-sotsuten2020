@@ -36,7 +36,6 @@ function Work(props) {
 
   const id = props.location.state.id;
   const WorksArray = json[id-1];
-  console.log(WorksArray);
   
 
   return (

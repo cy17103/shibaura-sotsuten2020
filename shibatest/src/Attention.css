@@ -1,0 +1,43 @@
+.attentionTitle h2{
+    margin: 0;
+    margin-top: 140px;
+  }
+  
+  .redText{
+    font-weight: bold;
+    color: #ef4949;
+  }
+  
+  .check1 h3{
+    font-family: YuGothic;
+    font-size: 24px;
+    margin: 46px 0 12px 0;
+    border-left: solid 6px;
+    padding-left: 12px;
+  }
+  
+  .check2 h3{
+    font-family: YuGothic;
+    font-size: 24px;
+    margin: 46px 0 12px 0;
+    border-left: solid 6px;
+    padding-left: 12px;
+  }
+  
+  .boldText{
+    font-weight: bold;
+  }
+  
+  .check3 h3{
+    font-family: YuGothic;
+    font-size: 24px;
+    margin: 46px 0 12px 0;
+    border-left: solid 6px;
+    padding-left: 12px;
+  }
+  
+  @media screen and (min-width: 768px){
+    .sp {display: none; }
+    
+    }
+  

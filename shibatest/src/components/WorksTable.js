@@ -50,6 +50,7 @@ class WorksTable extends React.Component{
                 return(
                   
                   <WorkSmall 
+                    id={work.id}
                     image={work.image}
                     title={work.title}
                     name={work.name}

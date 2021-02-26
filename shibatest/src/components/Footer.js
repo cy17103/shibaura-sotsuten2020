@@ -19,8 +19,7 @@ class Footer extends React.Component{
                         <Link to="/about">ABOUT</Link>
                         <p className="slash">/</p>
                         <Link to="/works">WORKS</Link>
-                        <p className="slash">/</p>
-                        <Link to="/portfolio">PORTFOLIO</Link>
+
                         <p className="slash">/</p>
                         <Link to="/contact">CONTACT</Link>
                     </div>
@@ -51,8 +50,6 @@ class Footer extends React.Component{
                         <Link to="/about">ABOUT</Link>
                         <p className="slash">/</p>
                         <Link to="/works">WORKS</Link>
-                        <p className="slash">/</p>
-                        <Link to="/">PORTFOLIO</Link>
                         <p className="slash">/</p>
                         <Link to="/">CONTACT</Link>
                     </div>

@@ -1,15 +1,23 @@
 
 .work-imgs{
   display: flex;
-  justify-content: center;
   height: 320px;
-  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
   margin-top: 60px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 .work-img{
+  display: inline-block;
   height: 320px;
   margin-right: 40px;
+}
+
+.item{
+  display: inline-block;
 }
 
 .work-contents-container{
@@ -37,7 +45,7 @@
 }
 
 .kanji{
-  width: 80px;
+  width: 72px;
 }
 
 .work-title{

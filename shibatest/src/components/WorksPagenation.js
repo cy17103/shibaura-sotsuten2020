@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Pagination from '@material-ui/lab/Pagination';
 import WorksTable from './WorksTable';
+import './WorksPagenation.css';
+
 
 const json = require('../test.json');
 let WorksArray = [];
@@ -40,7 +42,9 @@ for(let i=0; i < json.length;i++){
 };
 
 
-const count = Math.ceil(WorksArray.length / 9);
+const countPc = Math.ceil(WorksArray.length / 9);
+const countSp = Math.ceil(WorksArray.length / 8);
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,6 +54,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
 export default function PaginationControlled() {
   const classes = useStyles();
   const [page, setPage] = React.useState(1);
@@ -58,10 +64,19 @@ export default function PaginationControlled() {
     window.scrollTo(0, 0);
   };
 
+  const PaginationPc = (
+    <Pagination count={countPc} size="large" page={page} onChange={handleChange}/>
+  );
+
+  const PaginationSp = (
+    <Pagination count={countSp} size="medium" page={page} onChange={handleChange}/>
+  );
+
   return (
     <div className={classes.root}>
       <WorksTable list={WorksArray} page={page}/>
-      <Pagination count={count} size="large" page={page} onChange={handleChange}/>
+      <div className="hidden-sp">{PaginationPc}</div>
+      <div className="hidden-pc">{PaginationSp}</div>
     </div>
   );
 }
