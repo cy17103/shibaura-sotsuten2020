@@ -1,3 +1,8 @@
+.attentionTitle h2{
+  margin: 0;
+  margin-top: 140px;
+}
+
 .redText{
   font-weight: bold;
   color: #ef4949;

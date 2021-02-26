@@ -38,10 +38,10 @@ const containerVariants ={
         exit="exit"
         className="Attention"
     >
-        <PageTop 
+        {/* <PageTop 
             title="ATTENTION"
             text="本展覧会の新型コロナウイルス感染対策について"
-        />
+        /> */}
 
         <div className="container">
             <div className="attentionTitle">
@@ -63,11 +63,11 @@ const containerVariants ={
             <h3>ご来校に際してお願い</h3>
             <p>以下のような症状に心当たりがある方は、<br class="sp"></br>ご来校をご遠慮ください。</p><br></br>
             <p className="boldText">
-              -  37.5℃を超える発熱がある。<br></br>
-              -  息苦しさ、強いだるさがある。<br></br>
-              -  咳や微熱など比較的軽い風邪の症状が続いている。<br></br>
-              -  味覚や嗅覚に違和感がある。<br></br>
-              -  無症状だが、感染もしくは感染者との接触の心配や不安がある。
+               -  37.5℃を超える発熱がある。<br></br>
+               -  息苦しさ、強いだるさがある。<br></br>
+               -  咳や微熱など比較的軽い風邪の症状が続いている。<br></br>
+               -  味覚や嗅覚に違和感がある。<br></br>
+               -  無症状だが、感染もしくは感染者との接触の心配や不安がある。
             </p><br></br>
             <p>ご本人や身近な方が過去14日以内に、「入管法に基づく入国制限対象地域」への訪問歴をお持ちの方はご来場をご遠慮ください。<br></br><br></br>アルコール消毒液を使用した手指の消毒や、石けんを使用したこまめな手洗いにご協力<br class="sp"></br>ください。</p>
             <br></br>
