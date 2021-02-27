@@ -1,20 +1,33 @@
 .btn{
+    position: relative;
     margin: 0 auto;
     max-width: 343px;
     padding: 16px 40px;
-    background-color: white;
+    background-color: #F9FBFD;
     border: 1px solid #212121;
     text-align: center;
     border-radius: 4px;
     font-family: "YuGothic","Yu Gothic";
     box-sizing:border-box;
-    transition: all 0.2s;
+    transition: all 0.5s;
     margin: 0 auto;
 }
 
+.btn:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #212121;
+    width: 0;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    z-index: 0;
+}
+
 .btn-container{
-    display: flex;
-  
+    display: flex;  
+
 }
 
 .btn-container p{
@@ -27,6 +40,7 @@
 .btn-text{
     width: 100%;
     text-align: center;
+    z-index: 1;
 }
 
 .ic-grid{
@@ -34,17 +48,22 @@
     width: 24px;
     margin-right: 12px;
     padding: 0;
-    transition: all 0.3s;
+    z-index: 1;
+
 }
 
 .ic-grid path{
     fill:#212121;
-    transition: all 0.3s;
+    transition: all 0.5s;
+
 }
 
 .btn:hover{
-    background-color: #212121;
     color: white;
+}
+
+.btn:hover:before{
+    width: 100%;
 }
 
 .btn:hover .ic-grid path{

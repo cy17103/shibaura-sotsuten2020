@@ -12,8 +12,10 @@
 .pagetop-container{
     margin: 0 auto;
     text-align: center;
-    padding-top: 64px;
-    padding-bottom: 24px;
+    
+    padding:0 100px;
+    padding-top: 24px;
+    
 }
 
 .pagetop-title{
@@ -22,10 +24,26 @@
 }
 
 
-.pagetop-container p{
-    margin-bottom: 24px;
-}
-
 .pagetop-border{
     margin: 0 auto;
+    margin-top: 24px;
 }
+
+@media (max-width: 599px) {
+    .pagetop{    
+        margin-top: 80px;
+        height: auto;
+    }
+
+    .pagetop-container{
+        padding:24px 16px;
+    }
+
+    .pagetop-title{
+        margin-top: 16px;
+    }
+
+    .pagetop-border{
+        margin-top: 16px;
+    }
+  }

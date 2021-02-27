@@ -19,15 +19,17 @@ h1 {
     position: relative;
     padding: 0 65px;
     text-align: center;
-    font-family: Europa-Light;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 50px;
     line-height: 52px;
+    letter-spacing: -0.1rem;
+    margin-top: 0;
   }
 
 h2{
-    font-family: YuGothic;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -69,11 +71,7 @@ letter-spacing: 0.05em;
   }
   
   
-  /* 開発用 */
-  .blank240{ /*空白スペース*/
-    height: 240px;
-  }
-  
+  /* 余白/非表示 */
   .mg-auto{
     margin: 0 auto;
   }
@@ -82,6 +80,10 @@ letter-spacing: 0.05em;
     margin-bottom:120px;
   }
   
+  .mg-80{
+    margin-bottom: 80px;
+  }
+
   .mg-40{
     margin-bottom: 40px;
   }
@@ -106,12 +108,28 @@ letter-spacing: 0.05em;
     margin-right: 4px;
   }
 
+  .br-sp{
+    display: none;
+  }
+
+  .hidden-pc{
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .container{
+      padding: 0 52px;
+    }
+}
+
+
+
   @media (max-width: 599px) {
 
     .container{
       max-width: 343px;
       margin: 0 auto;
-      margin-bottom: 80px;
+      margin-bottom: 60px;
       padding: 0;
     }
 
@@ -129,6 +147,20 @@ letter-spacing: 0.05em;
       /* or 150% */
       letter-spacing: 0.03em; 
     }
+
+    .br-sp{
+      display: inline;
+    }
+
+    .hidden-sp{
+      display: none;
+    }
+
+    .hidden-pc{
+      display: inline;
+    }
+  
+
 
 
   }

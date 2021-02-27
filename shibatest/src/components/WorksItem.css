@@ -1,4 +1,5 @@
 .works-item-container{
+    position: relative;
     display: flex;
     text-align: left;
     flex-direction: column;
@@ -6,6 +7,7 @@
     width: 300px;
     height: 300px;
     overflow: hidden;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .15);
 
     font-family: YuGothic;
     font-style: normal;
@@ -23,7 +25,7 @@
 }
 
 .works-item-bg{
-    width: 300px;
+    margin: 0 auto;
     height: 300px;
     z-index: 0;
     transition: all 0.5s;
@@ -31,6 +33,8 @@
 
 
 .works-item-contents{
+    position: absolute;
+    top: 300px;
     height: 88px;
     z-index: 2;
     background-color: rgba(33,33,33,0.6);

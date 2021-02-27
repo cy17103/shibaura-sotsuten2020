@@ -1,6 +1,8 @@
 import React from 'react';
 import ClassTag from './ClassTag';
 import './PortfolioItem.css';
+import { Link } from '@material-ui/core';
+
 
 
 
@@ -16,6 +18,7 @@ class PortfolioItem extends React.Component{
         return( /* propsで渡された文字列を線で挟む */
 
             <div className={containerClass}>
+                <a href={this.props.link} target="_blank" rel="noopener noreferrer">
                 <ClassTag
                     class={this.props.status}
                 />
@@ -24,6 +27,7 @@ class PortfolioItem extends React.Component{
                 <div className="portfolio-item-contents">
                 <h4 className="portfolio-item-title white">{this.props.name}</h4>
                 </div>
+                </a>
                 
             </div>
         );

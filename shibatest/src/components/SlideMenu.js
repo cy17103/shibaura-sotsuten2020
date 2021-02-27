@@ -14,6 +14,8 @@ import './SlideMenu.css';
 import SlideMenuButton from './SlideMenuButton';
 import SnsShare from './SnsShare';
 
+
+
 const useStyles = makeStyles({
   list: {
     width: 340,
@@ -23,7 +25,8 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TemporaryDrawer() {
+
+export default function TemporaryDrawer(props) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -31,6 +34,39 @@ export default function TemporaryDrawer() {
     bottom: false,
     right: false,
   });
+
+  let pagesArray = [
+    {value:'HOME',sub:'ホーム',link:'/',flag:'false'},
+    {value:'ABOUT',sub:'展覧会について',link:'/About',flag:'false'},
+    {value:'WORKS',sub:'展示作品一覧',link:'/Works',flag:'false'},
+    {value:'CONTACT',sub:'お問い合わせ',link:'/Contact',flag:'false'}
+  ];
+
+  const currentPageName = props.currentPath.toUpperCase() ;
+
+  for(let i=0; i < pagesArray.length;i++){
+    const item = pagesArray[i];
+    if(item.value === currentPageName){
+      item.flag = 'true';
+    };
+
+  };
+
+  let theme;
+  if(props.currentPath === 'work'){
+    theme = "#fff";
+  }else{
+    theme = "#212121";
+  }
+
+  const menuIcon = (
+    <svg width="40" height="40" viewBox="0 0 40 40" >
+        <rect y="7" width="40" height="2" fill={theme}/>
+        <rect y="19" width="40" height="2" fill={theme}/>
+        <rect y="31" width="40" height="2" fill={theme}/>
+    </svg>
+  );
+  
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -50,24 +86,27 @@ export default function TemporaryDrawer() {
     >
 
       <div className="slide-menu-header" >
-        <div className="slide-menu-close" onClick={toggleDrawer('right',false)}>
+        <div className="slide-menu-ic" onClick={toggleDrawer('right',false)}>
             <img src={CloseIcon} alt="CloseIcon" />
         </div>
       </div>
       
       <List>
-        {[{value:'HOME',sub:'ホーム',link:'/'},{value:'ABOUT',sub:'展覧会について',link:'/About'},{value:'WORKS',sub:'展示作品一覧',link:'/'},{value:'PORTFOLIO',sub:'ポートフォリオ一覧',link:'/'},{value:'CONTACT',sub:'お問い合わせ',link:'/'}].map((item) => (
-          <SlideMenuButton 
+        {pagesArray.map((item) => (
+          <div onClick={toggleDrawer('right',false)} key={item.value}>
+          <SlideMenuButton  key={item.value}
           value={item.value}
           sub={item.sub}
           link={item.link}
+          flag={item.flag}
           />
+          </div>
         ))}
       </List>
 
 
       <Divider />
-
+      
       <div className="slide-menu-sns">
           <p className="slide-menu-sns-text">Offcial SNS</p>
           <SnsShare color="#212121" />
@@ -80,7 +119,8 @@ export default function TemporaryDrawer() {
     <div className="slide-menu">
       {['right'].map((anchor) => (
         <React.Fragment key={anchor}>
-            <img src={MenuIcon} onClick={toggleDrawer(anchor, true)} alt="MenuIcon" />
+            <div className=" slide-menu-ic" onClick={toggleDrawer(anchor, true)} >
+            {menuIcon}</div>
             <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>
