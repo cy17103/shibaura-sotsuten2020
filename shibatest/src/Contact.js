@@ -1,4 +1,5 @@
 import './Style.css';
+import './Contact.css';
 
 import PageTop from './components/PageTop';
 
@@ -41,9 +42,11 @@ function Contact() {
             text="お問い合わせフォーム"
             current="CONTACT"
         />
-        <div className="container">
+        <div className="contact-container">
           {/*ここに内容を追加していく */}
-
+          <div className="google-form">
+            <iframe className="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdDVzN_jdFufeRICIDdl_HV-BMZYPoahw39ynAjBlgG5kty_g/viewform?embedded=true" width="100%"  frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+          </div>
         </div>
 
     </motion.div>

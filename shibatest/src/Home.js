@@ -170,6 +170,7 @@ function Home() {
               return(
               <li key={work.title}>
                 <WorksItem 
+                  id={work.id}
                   title={work.title}
                   lab={work.lab}
                   name={work.name}
@@ -187,7 +188,8 @@ function Home() {
               {lowerWorksArray.map((work) =>{
                 return(
                 <li key={work.title}>
-                  <WorksItem 
+                  <WorksItem
+                    id={work.id} 
                     title={work.title}
                     lab={work.lab}
                     name={work.name}
@@ -203,6 +205,7 @@ function Home() {
               return(
               <li key={work.title}>
                 <WorksItem 
+                  id={work.id}
                   title={work.title}
                   lab={work.lab}
                   name={work.name}
