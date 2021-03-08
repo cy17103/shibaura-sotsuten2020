@@ -40,21 +40,22 @@ const containerVariants ={
     >
         {/* <PageTop 
             title="ATTENTION"
-            text="本展覧会の新型コロナウイルス感染対策について"
+            text="芝浦工業大学デザイン工学部卒業・修士研究展2021 一般公開中止のご案内"
         /> */}
 
         <div className="container">
             <div className="attentionTitle">
-              <h2>本展覧会の新型コロナウイルス<br class="sp"></br>感染対策について</h2>
+              <h2>芝浦工業大学デザイン工学部卒業<br class="sp"></br>・修士研究展2021 一般公開中止<br class="sp"></br>のご案内</h2>
             </div>
 
             <div className="titleTexts">
-              <p>芝浦工業大学デザイン工学部卒業・修了研究展2021では新型コロナウイルス感染症予防として、以下の対策を実施して開催いたします。</p>
-              <p className="redText">ご来校に際しては本ページをご一読のうえ、展覧会にご参加くださいますよう、ご協力をお願いいたします。</p>
-              <p className="about-subtext">* 状況により、実施時期・内容等を変更する場合がございます。</p>
+              <p>いつもご覧いただきましてありがとうござい<br class="sp"></br>ます。<br></br>この度、昨今の新型コロナウイルス感染拡大の影響および緊急事態宣言の延長を受け、3月13日〜21日に開催予定であった「芝浦工業<br class="sp"></br>大学デザイン工学部卒業・修士研究展2021」について、<span class="redText">一般公開を中止させて</span>頂く運びとなりましたのでご連絡致します。
+             <br></br><br></br>来場を楽しみにしておられました方につきましては、大変恐縮ですが、ご理解頂けると幸いです。<br></br><br></br>なお、オンラインでの展示は引き続き開催<br class="sp"></br>予定です。オンライン展示詳細につきましては、開催日（3月13日）にSNSや本ホーム<br class="sp"></br>ページ等で告知予定ですので、ご確認の程<br class="sp"></br>よろしくお願いいたします。<br></br><br></br></p>
+              
+              <p className="attentionWriter">芝浦工業大学デザイン工学部<br class="sp"></br>卒業・修士研究展2021 卒業展示委員会一同</p>
             </div>
             
-          <div className="check1">
+          {/* <div className="check1">
             <h3>ご来校時の体温チェック</h3>
             <p>ご来校時に、スタッフが非接触型体温計で<br class="sp"></br>検温をさせていただきます。37.5度以上の<br class="sp"></br>発熱が見つかった場合、ご本人および同伴の方は事前予約いただいてもご入場いただけ<br class="sp"></br>ません。あらかじめご了承ください。</p>
           </div>
@@ -81,7 +82,7 @@ const containerVariants ={
             ・会場内の混雑状況によってご入場を制限<br class="sp"></br>させていただく場合がございます。<br></br>
             ・校内および周辺では、他の参加者と一定の距離を保つようお声がけする場合がございます。<br></br>
             ・本展覧会のスタッフはマスクの着用をして対応させていただきます。</p>
-          </div>
+          </div> */}
         
         </div>
     </motion.div>

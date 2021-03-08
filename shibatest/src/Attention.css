@@ -8,7 +8,11 @@
   color: #ef4949;
 }
 
-.check1 h3{
+.attentionWriter{
+  text-align: right;
+}
+
+/* .check1 h3{
   font-family: YuGothic;
   font-size: 24px;
   margin: 46px 0 12px 0;
@@ -35,6 +39,7 @@
   border-left: solid 6px;
   padding-left: 12px;
 }
+ */
 
 .sp{
   display: none;
@@ -50,7 +55,7 @@
     font-size: 20px;
   }
 
-  .check1 h3{
+  /* .check1 h3{
     font-size: 18px;
     margin: 36px 0 12px 0;
     border-left: solid 4px;
@@ -69,6 +74,6 @@
     margin: 36px 0 12px 0;
     border-left: solid 4px;
     padding-left: 8px;
-  }
+  } */
   
   }
